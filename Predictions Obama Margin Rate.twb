@@ -1,0 +1,1672 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20183.19.0123.2221                               -->
+<workbook original-version='18.1' source-build='2018.3.3 (20183.19.0123.2221)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='PredictedObamaMarginRate' inline='true' name='federated.04mofdt1lq688y1bw1uf61fyjsqi' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='PredictedObamaMarginRate' name='textscan.1dztz6l10al07e16ojyga1wq051f'>
+            <connection class='textscan' directory='C:/Users/hamid/OneDrive/Documents/Mangement Science/Year 2/Data Analytics 2/Group Project' filename='PredictedObamaMarginRate.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1dztz6l10al07e16ojyga1wq051f' name='PredictedObamaMarginRate.csv' table='[PredictedObamaMarginRate#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='County' ordinal='1' />
+            <column datatype='string' name='State' ordinal='2' />
+            <column datatype='string' name='Region' ordinal='3' />
+            <column datatype='integer' name='FIPS' ordinal='4' />
+            <column datatype='date' name='ElectionDate' ordinal='5' />
+            <column datatype='string' name='ElectionType' ordinal='6' />
+            <column datatype='string' name='TotalVote' ordinal='7' />
+            <column datatype='string' name='Clinton' ordinal='8' />
+            <column datatype='string' name='Obama' ordinal='9' />
+            <column datatype='real' name='MalesPer100Females' ordinal='10' />
+            <column datatype='real' name='AgeBelow35' ordinal='11' />
+            <column datatype='real' name='Age35to65' ordinal='12' />
+            <column datatype='real' name='Age65andAbove' ordinal='13' />
+            <column datatype='real' name='White' ordinal='14' />
+            <column datatype='real' name='Black' ordinal='15' />
+            <column datatype='real' name='Asian' ordinal='16' />
+            <column datatype='real' name='AmericanIndian' ordinal='17' />
+            <column datatype='real' name='Hawaiian' ordinal='18' />
+            <column datatype='real' name='Hispanic' ordinal='19' />
+            <column datatype='real' name='HighSchool' ordinal='20' />
+            <column datatype='real' name='Bachelors' ordinal='21' />
+            <column datatype='real' name='Poverty' ordinal='22' />
+            <column datatype='real' name='IncomeAbove75K' ordinal='23' />
+            <column datatype='integer' name='MedianIncome' ordinal='24' />
+            <column datatype='integer' name='AverageIncome' ordinal='25' />
+            <column datatype='real' name='UnemployRate' ordinal='26' />
+            <column datatype='real' name='ManfEmploy' ordinal='27' />
+            <column datatype='real' name='SpeakingNonEnglish' ordinal='28' />
+            <column datatype='integer' name='Medicare' ordinal='29' />
+            <column datatype='integer' name='MedicareRate' ordinal='30' />
+            <column datatype='integer' name='SocialSecurity' ordinal='31' />
+            <column datatype='integer' name='SocialSecurityRate' ordinal='32' />
+            <column datatype='integer' name='RetiredWorkers' ordinal='33' />
+            <column datatype='integer' name='Disabilities' ordinal='34' />
+            <column datatype='integer' name='DisabilitiesRate' ordinal='35' />
+            <column datatype='real' name='Homeowner' ordinal='36' />
+            <column datatype='real' name='SameHouse1995and2000' ordinal='37' />
+            <column datatype='integer' name='Pop' ordinal='38' />
+            <column datatype='real' name='PopDensity' ordinal='39' />
+            <column datatype='integer' name='LandArea' ordinal='40' />
+            <column datatype='integer' name='FarmArea' ordinal='41' />
+            <column datatype='string' name='ObamaRate' ordinal='42' />
+            <column datatype='string' name='ClintonRate' ordinal='43' />
+            <column datatype='string' name='ObamaPercentMargin' ordinal='44' />
+            <column datatype='real' name='PredictedObamaRate' ordinal='45' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[PredictedObamaMarginRate.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[PredictedObamaMarginRate.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>County</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[County]</local-name>
+            <parent-name>[PredictedObamaMarginRate.csv]</parent-name>
+            <remote-alias>County</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[PredictedObamaMarginRate.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[PredictedObamaMarginRate.csv]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FIPS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FIPS]</local-name>
+            <parent-name>[PredictedObamaMarginRate.csv]</parent-name>
+            <remote-alias>FIPS</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ElectionDate</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[ElectionDate]</local-name>
+            <parent-name>[PredictedObamaMarginRate.csv]</parent-name>
+            <remote-alias>ElectionDate</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ElectionType</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ElectionType]</local-name>
+            <parent-name>[PredictedObamaMarginRate.csv]</parent-name>
+            <remote-alias>ElectionType</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalVote</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TotalVote]</local-name>
+            <parent-name>[PredictedObamaMarginRate.csv]</parent-name>
+            <remote-alias>TotalVote</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Clinton</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Clinton]</local-name>
+            <parent-name>[PredictedObamaMarginRate.csv]</parent-name>
+            <remote-alias>Clinton</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Obama</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Obama]</local-name>
+            <parent-name>[PredictedObamaMarginRate.csv]</parent-name>
+            <remote-alias>Obama</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MalesPer100Females</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MalesPer100Females]</local-name>
+            <parent-name>[PredictedObamaMarginRate.csv]</parent-name>
+            <remote-alias>MalesPer100Females</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AgeBelow35</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AgeBelow35]</local-name>
+            <parent-name>[PredictedObamaMarginRate.csv]</parent-name>
+            <remote-alias>AgeBelow35</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age35to65</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Age35to65]</local-name>
+            <parent-name>[PredictedObamaMarginRate.csv]</parent-name>
+            <remote-alias>Age35to65</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age65andAbove</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Age65andAbove]</local-name>
+            <parent-name>[PredictedObamaMarginRate.csv]</parent-name>
+            <remote-alias>Age65andAbove</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>White</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[White]</local-name>
+            <parent-name>[PredictedObamaMarginRate.csv]</parent-name>
+            <remote-alias>White</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Black</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Black]</local-name>
+            <parent-name>[PredictedObamaMarginRate.csv]</parent-name>
+            <remote-alias>Black</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Asian</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Asian]</local-name>
+            <parent-name>[PredictedObamaMarginRate.csv]</parent-name>
+            <remote-alias>Asian</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AmericanIndian</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AmericanIndian]</local-name>
+            <parent-name>[PredictedObamaMarginRate.csv]</parent-name>
+            <remote-alias>AmericanIndian</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hawaiian</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Hawaiian]</local-name>
+            <parent-name>[PredictedObamaMarginRate.csv]</parent-name>
+            <remote-alias>Hawaiian</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hispanic</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Hispanic]</local-name>
+            <parent-name>[PredictedObamaMarginRate.csv]</parent-name>
+            <remote-alias>Hispanic</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HighSchool</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[HighSchool]</local-name>
+            <parent-name>[PredictedObamaMarginRate.csv]</parent-name>
+            <remote-alias>HighSchool</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bachelors</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Bachelors]</local-name>
+            <parent-name>[PredictedObamaMarginRate.csv]</parent-name>
+            <remote-alias>Bachelors</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Poverty</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Poverty]</local-name>
+            <parent-name>[PredictedObamaMarginRate.csv]</parent-name>
+            <remote-alias>Poverty</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IncomeAbove75K</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[IncomeAbove75K]</local-name>
+            <parent-name>[PredictedObamaMarginRate.csv]</parent-name>
+            <remote-alias>IncomeAbove75K</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MedianIncome</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MedianIncome]</local-name>
+            <parent-name>[PredictedObamaMarginRate.csv]</parent-name>
+            <remote-alias>MedianIncome</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AverageIncome</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AverageIncome]</local-name>
+            <parent-name>[PredictedObamaMarginRate.csv]</parent-name>
+            <remote-alias>AverageIncome</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UnemployRate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[UnemployRate]</local-name>
+            <parent-name>[PredictedObamaMarginRate.csv]</parent-name>
+            <remote-alias>UnemployRate</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ManfEmploy</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ManfEmploy]</local-name>
+            <parent-name>[PredictedObamaMarginRate.csv]</parent-name>
+            <remote-alias>ManfEmploy</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SpeakingNonEnglish</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SpeakingNonEnglish]</local-name>
+            <parent-name>[PredictedObamaMarginRate.csv]</parent-name>
+            <remote-alias>SpeakingNonEnglish</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Medicare</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Medicare]</local-name>
+            <parent-name>[PredictedObamaMarginRate.csv]</parent-name>
+            <remote-alias>Medicare</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MedicareRate</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MedicareRate]</local-name>
+            <parent-name>[PredictedObamaMarginRate.csv]</parent-name>
+            <remote-alias>MedicareRate</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SocialSecurity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SocialSecurity]</local-name>
+            <parent-name>[PredictedObamaMarginRate.csv]</parent-name>
+            <remote-alias>SocialSecurity</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SocialSecurityRate</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SocialSecurityRate]</local-name>
+            <parent-name>[PredictedObamaMarginRate.csv]</parent-name>
+            <remote-alias>SocialSecurityRate</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RetiredWorkers</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RetiredWorkers]</local-name>
+            <parent-name>[PredictedObamaMarginRate.csv]</parent-name>
+            <remote-alias>RetiredWorkers</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Disabilities</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Disabilities]</local-name>
+            <parent-name>[PredictedObamaMarginRate.csv]</parent-name>
+            <remote-alias>Disabilities</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DisabilitiesRate</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DisabilitiesRate]</local-name>
+            <parent-name>[PredictedObamaMarginRate.csv]</parent-name>
+            <remote-alias>DisabilitiesRate</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Homeowner</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Homeowner]</local-name>
+            <parent-name>[PredictedObamaMarginRate.csv]</parent-name>
+            <remote-alias>Homeowner</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SameHouse1995and2000</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SameHouse1995and2000]</local-name>
+            <parent-name>[PredictedObamaMarginRate.csv]</parent-name>
+            <remote-alias>SameHouse1995and2000</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pop</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pop]</local-name>
+            <parent-name>[PredictedObamaMarginRate.csv]</parent-name>
+            <remote-alias>Pop</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PopDensity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PopDensity]</local-name>
+            <parent-name>[PredictedObamaMarginRate.csv]</parent-name>
+            <remote-alias>PopDensity</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LandArea</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LandArea]</local-name>
+            <parent-name>[PredictedObamaMarginRate.csv]</parent-name>
+            <remote-alias>LandArea</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FarmArea</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FarmArea]</local-name>
+            <parent-name>[PredictedObamaMarginRate.csv]</parent-name>
+            <remote-alias>FarmArea</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ObamaRate</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ObamaRate]</local-name>
+            <parent-name>[PredictedObamaMarginRate.csv]</parent-name>
+            <remote-alias>ObamaRate</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ClintonRate</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ClintonRate]</local-name>
+            <parent-name>[PredictedObamaMarginRate.csv]</parent-name>
+            <remote-alias>ClintonRate</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ObamaPercentMargin</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ObamaPercentMargin]</local-name>
+            <parent-name>[PredictedObamaMarginRate.csv]</parent-name>
+            <remote-alias>ObamaPercentMargin</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PredictedObamaRate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PredictedObamaRate]</local-name>
+            <parent-name>[PredictedObamaMarginRate.csv]</parent-name>
+            <remote-alias>PredictedObamaRate</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='American Indian' datatype='real' name='[AmericanIndian]' role='measure' type='quantitative' />
+      <column caption='Average Income' datatype='integer' name='[AverageIncome]' role='measure' type='quantitative' />
+      <column caption='Clinton Rate' datatype='string' name='[ClintonRate]' role='dimension' type='nominal' />
+      <column datatype='string' name='[County]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='Disabilities Rate' datatype='integer' name='[DisabilitiesRate]' role='measure' type='quantitative' />
+      <column caption='Election Date' datatype='date' name='[ElectionDate]' role='dimension' type='ordinal' />
+      <column caption='Election Type' datatype='string' name='[ElectionType]' role='dimension' type='nominal' />
+      <column caption='Fips' datatype='integer' name='[FIPS]' role='measure' type='quantitative' />
+      <column caption='Farm Area' datatype='integer' name='[FarmArea]' role='measure' type='quantitative' />
+      <column caption='High School' datatype='real' name='[HighSchool]' role='measure' type='quantitative' />
+      <column caption='Land Area' datatype='integer' name='[LandArea]' role='measure' type='quantitative' />
+      <column caption='Manf Employ' datatype='real' name='[ManfEmploy]' role='measure' type='quantitative' />
+      <column caption='Median Income' datatype='integer' name='[MedianIncome]' role='measure' type='quantitative' />
+      <column caption='Medicare Rate' datatype='integer' name='[MedicareRate]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Obama Percent Margin' datatype='string' name='[ObamaPercentMargin]' role='dimension' type='nominal' />
+      <column caption='Obama Rate' datatype='string' name='[ObamaRate]' role='dimension' type='nominal' />
+      <column caption='Pop Density' datatype='real' name='[PopDensity]' role='measure' type='quantitative' />
+      <column caption='Predicted Obama Rate' datatype='real' name='[PredictedObamaRate]' role='measure' type='quantitative' />
+      <column caption='Retired Workers' datatype='integer' name='[RetiredWorkers]' role='measure' type='quantitative' />
+      <column caption='Social Security Rate' datatype='integer' name='[SocialSecurityRate]' role='measure' type='quantitative' />
+      <column caption='Social Security' datatype='integer' name='[SocialSecurity]' role='measure' type='quantitative' />
+      <column caption='Speaking Non English' datatype='real' name='[SpeakingNonEnglish]' role='measure' type='quantitative' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Total Vote' datatype='string' name='[TotalVote]' role='dimension' type='nominal' />
+      <column caption='Unemploy Rate' datatype='real' name='[UnemployRate]' role='measure' type='quantitative' />
+      <drill-paths>
+        <drill-path name='State, County'>
+          <field>[State]</field>
+          <field>[County]</field>
+        </drill-path>
+      </drill-paths>
+      <layout dim-ordering='alphabetic' dim-percentage='0.556017' measure-ordering='alphabetic' measure-percentage='0.443983' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+        <semantic-value key='[State].[Name]' value='%null%' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Predicted Obama Margin Rate'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='PredictedObamaMarginRate' name='federated.04mofdt1lq688y1bw1uf61fyjsqi' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.04mofdt1lq688y1bw1uf61fyjsqi'>
+            <column caption='Predicted Obama Rate' datatype='real' name='[PredictedObamaRate]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[PredictedObamaRate]' derivation='Median' name='[med:PredictedObamaRate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.04mofdt1lq688y1bw1uf61fyjsqi].[none:State:nk]'>
+            <groupfilter from='&quot;IN&quot;' function='range' level='[none:State:nk]' to='&quot;WY&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[none:State:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Longitude (generated)]' field-type='quantitative' max='-7649187.6172210025' min='-14281668.791540634' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Latitude (generated)]' field-type='quantitative' max='6641649.3876070641' min='2785747.2887479495' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.04mofdt1lq688y1bw1uf61fyjsqi].[med:PredictedObamaRate:qk]' palette='red_green_diverging_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='tab_base' value='true' />
+            <format attr='enabled' id='um_lcover' value='true' />
+            <format attr='enabled' id='tab_coastline' value='false' />
+            <format attr='enabled' id='pp2_line' value='false' />
+            <format attr='enabled' id='light_adm0_bnd' value='false' />
+            <format attr='enabled' id='light_adm0_lbl' value='false' />
+            <format attr='enabled' id='um_adm0_bnd' value='true' />
+            <format attr='enabled' id='um_adm0_lbl' value='true' />
+            <format attr='enabled' id='light_pp2_statebounds' value='false' />
+            <format attr='enabled' id='light_pp2_statelabels' value='false' />
+            <format attr='enabled' id='pp2_adminlabels' value='false' />
+            <format attr='enabled' id='pp2_statebounds' value='true' />
+            <format attr='enabled' id='pp2_statelabels' value='true' />
+            <format attr='enabled' id='countybounds' value='false' />
+            <format attr='enabled' id='countylabels' value='false' />
+            <format attr='enabled' id='zipbounds' value='false' />
+            <format attr='enabled' id='ziplabels' value='false' />
+            <format attr='enabled' id='tab_areabounds' value='false' />
+            <format attr='enabled' id='tab_arealabels' value='false' />
+            <format attr='enabled' id='tab_msabounds' value='false' />
+            <format attr='enabled' id='tab_msalabels' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.04mofdt1lq688y1bw1uf61fyjsqi].[med:PredictedObamaRate:qk]' />
+              <lod column='[federated.04mofdt1lq688y1bw1uf61fyjsqi].[none:State:nk]' />
+              <geometry column='[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Latitude (generated)]</rows>
+        <cols>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Longitude (generated)]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Predicted Obama Margin Rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.04mofdt1lq688y1bw1uf61fyjsqi].[med:PredictedObamaRate:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <tuple-selection>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Longitude (generated)]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Latitude (generated)]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[med:PredictedObamaRate:qk]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[none:State:nk]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Geometry (generated)]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Latitude (generated)]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Longitude (generated)]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>7.7526869911691803</value>
+                <value>&quot;WY&quot;</value>
+                <value>&quot;POLYGON((-104.0555 43.5035,-104.0555 43.4774,-104.0538 43.0012,-104.052 42.6119,-104.052 42.0019,-104.052 41.6978,-104.052 41.564,-104.052 41.3937,-104.0538 41.0009,-104.9436 40.9974,-105.2773 40.9974,-106.1914 40.9974,-106.3217 40.9992,-106.857 41.0027,-107.3175 41.0027,-107.9188 41.0027,-109.0502 41.0009,-110.0008 40.9974,-110.0477 40.9974,-111.0418 40.9992,-111.047 41.2512,-111.0453 41.5796,-111.047 42.0019,-111.047 42.5129,-111.0435 43.0203,-111.0453 43.3158,-111.0453 43.5017,-111.047 43.9831,-111.0488 44.4732,-111.0557 44.6661,-111.0557 44.9981,-111.0435 45.0015,-110.795 45.0033,-110.7047 44.9928,-110.6073 44.9928,-110.3623 44.9998,-110.1989 44.9963,-110.1016 45.0033,-109.7992 45.0015,-108.6209 44.9998,-108.249 44.9998,-107.9119 45.0015,-106.2644 44.9946,-106.0245 44.9928,-105.9098 45.0015,-105.0774 44.9998,-105.0392 44.9998,-104.0573 44.9981,-104.0555 44.5705,-104.0538 44.1812,-104.0538 44.1413,-104.0555 43.8528,-104.0555 43.5035))&quot;</value>
+                <value>43.0</value>
+                <value>-107.5</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Longitude (generated)]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Latitude (generated)]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[med:PredictedObamaRate:qk]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[none:State:nk]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Geometry (generated)]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Latitude (generated)]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Longitude (generated)]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>-31.349929332052</value>
+                <value>&quot;WV&quot;</value>
+                <value>&quot;POLYGON((-81.3623 37.3375,-81.3744 37.3184,-81.3953 37.3149,-81.4161 37.2732,-81.4474 37.2714,-81.4804 37.2506,-81.4978 37.2575,-81.5082 37.2332,-81.5447 37.2193,-81.5569 37.2071,-81.6786 37.2019,-81.7237 37.2401,-81.7394 37.2384,-81.7568 37.2766,-81.8037 37.2853,-81.8489 37.2853,-81.861 37.3166,-81.894 37.3305,-81.9288 37.3601,-81.9358 37.3809,-81.9236 37.4105,-81.9358 37.4383,-81.9862 37.4556,-81.9896 37.4852,-81.9531 37.4921,-81.9271 37.5113,-81.9444 37.513,-81.9444 37.5304,-81.9688 37.5373,-81.9723 37.546,-82.0105 37.5321,-82.0418 37.5478,-82.047 37.5286,-82.0748 37.5564,-82.1043 37.5599,-82.1321 37.553,-82.1443 37.5686,-82.1269 37.5738,-82.1339 37.5929,-82.1565 37.5929,-82.1652 37.6207,-82.2138 37.626,-82.2364 37.659,-82.259 37.6572,-82.2833 37.6764,-82.2938 37.6694,-82.3181 37.7337,-82.3337 37.7407,-82.3407 37.7858,-82.3772 37.8032,-82.4206 37.8467,-82.4154 37.8554,-82.4206 37.8849,-82.4815 37.9266,-82.4971 37.9457,-82.4745 37.9544,-82.4884 37.9996,-82.5162 38.0066,-82.5388 38.0361,-82.551 38.0709,-82.584 38.09,-82.5875 38.1091,-82.6187 38.1213,-82.6379 38.1386,-82.6431 38.1682,-82.6135 38.1717,-82.5979 38.2168,-82.6118 38.2325,-82.6048 38.2481,-82.584 38.2464,-82.5753 38.2655,-82.5823 38.2968,-82.5718 38.3176,-82.5979 38.3472,-82.5927 38.4219,-82.5683 38.4045,-82.5075 38.4115,-82.405 38.4393,-82.3807 38.4341,-82.3268 38.448,-82.3042 38.4949,-82.2868 38.5835,-82.2625 38.5974,-82.219 38.5922,-82.1825 38.5992,-82.1721 38.6252,-82.1912 38.6809,-82.1825 38.7087,-82.1982 38.7573,-82.2208 38.773,-82.2121 38.8008,-82.146 38.8407,-82.1426 38.8981,-82.1287 38.9085,-82.0991 38.9589,-82.0904 38.9746,-82.0505 38.9954,-82.0383 39.0232,-82.0035 39.0284,-81.9792 38.9937,-81.941 38.9937,-81.9184 38.9676,-81.8993 38.9294,-81.9288 38.8963,-81.908 38.879,-81.8888 38.8738,-81.8471 38.9033,-81.8437 38.9311,-81.8124 38.945,-81.7793 38.9242,-81.7568 38.9363,-81.7811 38.9641,-81.7637 39.0163,-81.8037 39.0475,-81.8141 39.0788,-81.7759 39.0788,-81.7481 39.0962,-81.7429 39.1431,-81.7568 39.1814,-81.7376 39.1918,-81.7255 39.2161,-81.6925 39.2265,-81.6959 39.2561,-81.6768 39.2752,-81.5691 39.2683,-81.5552 39.3395,-81.4561 39.409,-81.4161 39.3969,-81.3901 39.3482,-81.3709 39.3412,-81.3466 39.3465,-81.2719 39.3864,-81.2163 39.3882,-81.1833 39.4334,-81.1346 39.4455,-81.1207 39.4577,-81.0929 39.4959,-81.039 39.5394,-80.9434 39.6071,-80.926 39.6176,-80.8791 39.6228,-80.867 39.6541,-80.8635 39.6923,-80.8339 39.7045,-80.8339 39.7201,-80.8704 39.7636,-80.8253 39.8018,-80.8218 39.8504,-80.7905 39.8678,-80.8096 39.9043,-80.8061 39.9165,-80.7557 39.913,-80.7644 39.9495,-80.7401 39.9721,-80.7418 40.0086,-80.7331 40.0329,-80.7384 40.0764,-80.7088 40.1007,-80.7036 40.1581,-80.681 40.1859,-80.6688 40.1998,-80.6532 40.2449,-80.6184 40.2658,-80.6011 40.3162,-80.6132 40.3475,-80.608 40.3718,-80.6289 40.3944,-80.6115 40.4031,-80.6115 40.4361,-80.5959 40.4726,-80.6184 40.5022,-80.6271 40.5352,-80.6636 40.5699,-80.6671 40.5821,-80.6271 40.6203,-80.5993 40.6255,-80.5767 40.6151,-80.5194 40.6394,-80.5194 40.4778,-80.5176 40.3996,-80.5194 40.1598,-80.5194 40.0155,-80.5194 39.9617,-80.5194 39.7218,-80.4221 39.7218,-79.9163 39.7201,-79.7634 39.7201,-79.4767 39.7218,-79.4871 39.2057,-79.4732 39.2022,-79.4263 39.2248,-79.4245 39.2352,-79.388 39.2683,-79.315 39.3048,-79.2907 39.2995,-79.2716 39.3273,-79.2542 39.3378,-79.2559 39.3569,-79.2142 39.3638,-79.1986 39.3882,-79.1795 39.3969,-79.1638 39.3882,-79.1604 39.416,-79.1273 39.4177,-79.0943 39.4646,-79.0683 39.4785,-79.0474 39.4838,-78.9657 39.4386,-78.9588 39.4629,-78.9344 39.4855,-78.9171 39.4872,-78.8927 39.5237,-78.8389 39.5672,-78.8163 39.562,-78.825 39.5898,-78.8024 39.628,-78.7815 39.6367,-78.7659 39.588,-78.7328 39.5863,-78.7242 39.5637,-78.6564 39.5359,-78.5921 39.5376,-78.566 39.5202,-78.5226 39.5255,-78.4687 39.5168,-78.4617 39.5359,-78.4374 39.5394,-78.4374 39.5533,-78.4565 39.588,-78.4444 39.5915,-78.4079 39.5793,-78.3957 39.5846,-78.4252 39.6071,-78.42 39.6245,-78.3766 39.6089,-78.3818 39.6297,-78.3557 39.6263,-78.3557 39.6402,-78.3331 39.6367,-78.2654 39.6193,-78.2532 39.6402,-78.2236 39.661,-78.2323 39.6732,-78.2028 39.6767,-78.1767 39.6958,-78.0794 39.6697,-78.022 39.6193,-78.0029 39.6002,-77.9543 39.6071,-77.8917 39.5985,-77.8848 39.6158,-77.8378 39.6054,-77.8361 39.5672,-77.8882 39.5567,-77.8656 39.5376,-77.8639 39.515,-77.8448 39.5168,-77.8257 39.4924,-77.7979 39.489,-77.7979 39.4612,-77.7527 39.4229,-77.7353 39.3899,-77.7527 39.3812,-77.744 39.3604,-77.7614 39.3395,-77.7197 39.3221,-77.7353 39.3117,-77.7718 39.237,-77.7926 39.2109,-77.8291 39.1327,-78.0325 39.2648,-78.2289 39.3916,-78.347 39.4664,-78.3592 39.4108,-78.3436 39.3882,-78.3661 39.3586,-78.3401 39.3482,-78.4183 39.2578,-78.3992 39.2439,-78.4374 39.1987,-78.4044 39.1675,-78.4583 39.1153,-78.5087 39.0893,-78.5434 39.0562,-78.5695 39.0336,-78.5538 39.0163,-78.6008 38.9676,-78.6286 38.9815,-78.6981 38.9137,-78.7189 38.905,-78.7172 38.9346,-78.7381 38.9276,-78.7589 38.9016,-78.785 38.8877,-78.8701 38.7625,-78.9935 38.8494,-79.0196 38.8181,-79.0265 38.7921,-79.0544 38.7851,-79.0578 38.7608,-79.0856 38.7226,-79.0839 38.6861,-79.0926 38.66,-79.1291 38.6548,-79.1708 38.5679,-79.2055 38.5244,-79.209 38.4966,-79.2247 38.4775,-79.282 38.4323,-79.282 38.4184,-79.3116 38.4115,-79.4767 38.4567,-79.5375 38.5505,-79.6487 38.5922,-79.6696 38.5505,-79.6626 38.5158,-79.68 38.5105,-79.6974 38.4862,-79.6904 38.4323,-79.7304 38.3802,-79.7269 38.3628,-79.7651 38.3559,-79.7738 38.335,-79.8086 38.3089,-79.786 38.2742,-79.7964 38.2655,-79.8451 38.2412,-79.8972 38.1925,-79.9198 38.1821,-79.9181 38.1543,-79.9459 38.1317,-79.9268 38.1074,-79.9546 38.0813,-79.9598 38.0639,-79.9998 37.9944,-80.0554 37.9527,-80.104 37.9179,-80.1179 37.8971,-80.1492 37.8866,-80.1822 37.8519,-80.1805 37.8397,-80.2274 37.798,-80.2292 37.7789,-80.2483 37.7685,-80.2622 37.7389,-80.2535 37.7268,-80.2969 37.692,-80.2674 37.6468,-80.2205 37.6277,-80.2587 37.5964,-80.3265 37.5634,-80.3126 37.546,-80.283 37.5321,-80.3056 37.506,-80.3647 37.4852,-80.3734 37.4748,-80.4759 37.4226,-80.4951 37.4383,-80.4985 37.4643,-80.5142 37.48,-80.5611 37.4695,-80.7158 37.3896,-80.7679 37.3722,-80.7835 37.3948,-80.8061 37.3983,-80.8374 37.4261,-80.8583 37.4278,-80.86 37.4296,-80.8826 37.3844,-80.8513 37.3462,-80.9156 37.3079,-80.9799 37.2923,-80.9869 37.301,-81.1051 37.2801,-81.1694 37.2627,-81.225 37.2349,-81.3205 37.2992,-81.3623 37.3375))&quot;</value>
+                <value>38.630000000000003</value>
+                <value>-80.730000000000004</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Longitude (generated)]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Latitude (generated)]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[med:PredictedObamaRate:qk]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[none:State:nk]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Geometry (generated)]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Latitude (generated)]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Longitude (generated)]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>-4.9113463552482557</value>
+                <value>&quot;WI&quot;</value>
+                <value>&quot;MULTIPOLYGON(((-86.9478 45.3665,-86.9339 45.3891,-86.9113 45.4047,-86.8435 45.4099,-86.8366 45.3978,-86.8731 45.3474,-86.9096 45.3265,-86.9339 45.3404,-86.9478 45.3665)),((-89.8379 42.5059,-89.9265 42.5059,-90.4271 42.5077,-90.6408 42.5077,-90.6443 42.5424,-90.6843 42.5876,-90.7086 42.6345,-90.8963 42.6745,-90.9762 42.6954,-91.0649 42.751,-91.0788 42.8274,-91.0944 42.8309,-91.0996 42.8831,-91.1448 42.9074,-91.1465 42.9595,-91.157 42.9873,-91.1743 43.0395,-91.1778 43.0794,-91.1761 43.1333,-91.1465 43.1524,-91.1205 43.1993,-91.0649 43.2411,-91.0579 43.255,-91.1083 43.314,-91.2056 43.3523,-91.2143 43.3662,-91.1987 43.3923,-91.2056 43.4235,-91.2334 43.4548,-91.216 43.4826,-91.2178 43.5,-91.2439 43.5434,-91.2334 43.5817,-91.2682 43.6199,-91.2717 43.6547,-91.2682 43.712,-91.2578 43.7259,-91.2439 43.7746,-91.263 43.792,-91.2838 43.8476,-91.3568 43.9171,-91.3672 43.9379,-91.4246 43.9849,-91.435 43.9988,-91.4646 44.0092,-91.5584 44.0248,-91.588 44.0301,-91.6105 44.0492,-91.647 44.0648,-91.6766 44.0944,-91.7079 44.1048,-91.72 44.1291,-91.7531 44.1361,-91.8087 44.1604,-91.8591 44.1934,-91.8747 44.2021,-91.8903 44.2299,-91.8973 44.2751,-91.9234 44.2907,-91.9129 44.3099,-91.9234 44.329,-91.9686 44.3655,-92.0833 44.4072,-92.2171 44.4385,-92.2414 44.4541,-92.2935 44.4889,-92.3161 44.541,-92.3561 44.5584,-92.4569 44.5618,-92.5195 44.5757,-92.5473 44.5671,-92.5681 44.6018,-92.5855 44.6001,-92.6203 44.614,-92.6272 44.6453,-92.7315 44.7148,-92.8027 44.7461,-92.8045 44.7704,-92.7854 44.7912,-92.7662 44.8364,-92.7697 44.8625,-92.7749 44.8973,-92.7593 44.9094,-92.7506 44.939,-92.7697 44.9737,-92.7628 45.0224,-92.8027 45.0641,-92.7923 45.0797,-92.7402 45.1145,-92.7575 45.1545,-92.7523 45.1736,-92.7662 45.1875,-92.7575 45.2101,-92.7593 45.2518,-92.7523 45.2674,-92.761 45.2883,-92.7454 45.2952,-92.7037 45.3283,-92.7019 45.3578,-92.6498 45.3995,-92.6463 45.443,-92.6793 45.4638,-92.7263 45.5142,-92.7263 45.542,-92.768 45.5646,-92.8219 45.5611,-92.8827 45.575,-92.8879 45.6445,-92.8688 45.7175,-92.841 45.7297,-92.7871 45.7627,-92.7593 45.8062,-92.7645 45.8305,-92.7402 45.8461,-92.7228 45.8826,-92.6376 45.9348,-92.5525 45.9522,-92.549 45.9678,-92.5264 45.9834,-92.4691 45.9747,-92.4413 46.0165,-92.4221 46.0269,-92.3717 46.0147,-92.3509 46.0165,-92.3318 46.0634,-92.2935 46.0738,-92.2935 46.1572,-92.2935 46.4179,-92.2918 46.6629,-92.2692 46.6525,-92.2066 46.6525,-92.2032 46.6664,-92.1771 46.6873,-92.2014 46.6977,-92.1893 46.7168,-92.1493 46.7168,-92.1406 46.7359,-92.0954 46.7481,-92.0155 46.7064,-91.8938 46.7012,-91.7687 46.7151,-91.5497 46.7585,-91.515 46.7655,-91.2265 46.8489,-91.1048 46.868,-90.9606 46.9323,-90.8806 46.9445,-90.8459 46.9393,-90.8042 46.9184,-90.7833 46.8889,-90.7885 46.8611,-90.8111 46.8246,-90.865 46.7603,-90.8719 46.7047,-90.9258 46.6125,-90.9067 46.6021,-90.8719 46.6039,-90.7503 46.6386,-90.6895 46.6404,-90.5921 46.6073,-90.5435 46.5969,-90.4166 46.5674,-90.394 46.5326,-90.3506 46.5396,-90.3332 46.5535,-90.3089 46.5378,-90.3158 46.517,-90.2776 46.5239,-90.2724 46.5048,-90.2307 46.51,-90.1681 46.4422,-90.1577 46.4092,-90.1194 46.3588,-90.1212 46.338,-89.93 46.2997,-89.0958 46.1398,-88.9916 46.0981,-88.9325 46.0738,-88.816 46.0199,-88.7969 46.0338,-88.7587 46.0199,-88.7396 46.0269,-88.7187 46.013,-88.684 46.0147,-88.6631 45.9921,-88.6144 45.9886,-88.6023 46.0182,-88.5884 46.006,-88.5658 46.0165,-88.5102 46.0199,-88.4893 45.9921,-88.458 45.9991,-88.4163 45.9747,-88.3816 45.9921,-88.2929 45.9504,-88.2477 45.9626,-88.2356 45.9487,-88.1904 45.9522,-88.1174 45.9209,-88.0948 45.9157,-88.107 45.9018,-88.1 45.8826,-88.0705 45.8722,-88.1365 45.8183,-88.0931 45.7853,-88.0583 45.7801,-87.9923 45.7957,-87.9888 45.7714,-87.9627 45.7592,-87.8776 45.754,-87.8463 45.7227,-87.8115 45.7106,-87.7837 45.6724,-87.8237 45.6619,-87.8237 45.648,-87.775 45.6011,-87.7907 45.5646,-87.8324 45.5681,-87.8028 45.5385,-87.7924 45.5003,-87.8133 45.4638,-87.8619 45.4343,-87.8498 45.4047,-87.8758 45.3786,-87.8706 45.3561,-87.8498 45.3404,-87.8324 45.3526,-87.7577 45.3491,-87.6986 45.3891,-87.6569 45.3682,-87.6482 45.3404,-87.6864 45.2987,-87.7246 45.2327,-87.7264 45.2101,-87.742 45.1979,-87.7368 45.1718,-87.6829 45.144,-87.6603 45.1075,-87.5908 45.0971,-87.6551 45.0067,-87.7021 44.9789,-87.7629 44.9546,-87.8133 44.9338,-87.8307 44.9129,-87.848 44.8712,-87.9019 44.8104,-87.9679 44.72,-87.9853 44.6748,-88.0201 44.5827,-88.0131 44.5636,-87.9853 44.5479,-87.954 44.5445,-87.928 44.5514,-87.7681 44.6592,-87.7577 44.6696,-87.7507 44.6765,-87.6273 44.7999,-87.563 44.8382,-87.4813 44.866,-87.4031 44.8764,-87.3684 44.9563,-87.2433 45.1319,-87.2154 45.1597,-87.1372 45.2031,-87.0608 45.2639,-87.0191 45.2744,-86.9965 45.2639,-86.9947 45.2396,-87.033 45.1875,-87.066 45.0954,-87.1616 44.9928,-87.1894 44.9338,-87.311 44.7791,-87.3753 44.6765,-87.4379 44.5775,-87.4744 44.4993,-87.5057 44.402,-87.523 44.3272,-87.5248 44.2542,-87.537 44.2004,-87.57 44.1534,-87.6204 44.103,-87.6534 44.0544,-87.7073 43.9379,-87.7177 43.8928,-87.7194 43.8789,-87.7177 43.7207,-87.7333 43.6599,-87.782 43.5417,-87.8602 43.3592,-87.8845 43.2654,-87.8863 43.1924,-87.888 43.1333,-87.8776 43.003,-87.8185 42.8431,-87.7942 42.7944,-87.7872 42.751,-87.7994 42.6676,-87.8063 42.6102,-87.8011 42.4938,-88.1991 42.4938,-88.3051 42.4938,-88.7065 42.4938,-88.7761 42.492,-88.9412 42.4955,-89.3652 42.5007,-89.4017 42.5007,-89.8379 42.5059)))&quot;</value>
+                <value>44.5</value>
+                <value>-90.0</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Longitude (generated)]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Latitude (generated)]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[med:PredictedObamaRate:qk]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[none:State:nk]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Geometry (generated)]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Latitude (generated)]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Longitude (generated)]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>5.6446521864254198</value>
+                <value>&quot;VT&quot;</value>
+                <value>&quot;POLYGON((-72.4591 42.7266,-72.9301 42.7388,-73.0222 42.7405,-73.2655 42.7458,-73.2759 42.7458,-73.2881 42.7944,-73.2776 42.8552,-73.2742 42.9439,-73.255 43.314,-73.2481 43.5226,-73.2481 43.5539,-73.2672 43.5713,-73.295 43.5765,-73.2915 43.6008,-73.3072 43.6286,-73.3715 43.6251,-73.3732 43.6043,-73.3958 43.5678,-73.4306 43.5886,-73.4184 43.6217,-73.4271 43.6425,-73.4149 43.6529,-73.4045 43.6912,-73.3715 43.7259,-73.3628 43.7537,-73.3506 43.7711,-73.3784 43.8093,-73.3923 43.8232,-73.3732 43.8441,-73.375 43.8754,-73.408 43.931,-73.4132 43.9814,-73.4062 44.0161,-73.4375 44.0474,-73.4114 44.1117,-73.4149 44.1326,-73.4028 44.1448,-73.3906 44.1917,-73.3628 44.2091,-73.3437 44.2386,-73.3246 44.2438,-73.3141 44.2647,-73.335 44.3637,-73.2933 44.4402,-73.3072 44.501,-73.3385 44.5462,-73.361 44.5636,-73.3819 44.5897,-73.3889 44.6192,-73.361 44.6939,-73.3645 44.7426,-73.3332 44.7947,-73.335 44.8051,-73.3784 44.8382,-73.3802 44.8486,-73.3576 44.9007,-73.3385 44.9181,-73.3385 44.965,-73.3541 44.9859,-73.3437 45.0102,-73.1942 45.0102,-72.6207 45.012,-72.5547 45.0085,-71.8978 45.0085,-71.5015 45.0137,-71.5415 44.9842,-71.5172 44.965,-71.5224 44.939,-71.4946 44.9042,-71.5502 44.8625,-71.5519 44.8364,-71.5762 44.8156,-71.5728 44.7912,-71.6319 44.7513,-71.5936 44.6957,-71.5867 44.6609,-71.5623 44.6522,-71.5537 44.6053,-71.5345 44.5879,-71.5589 44.5636,-71.571 44.5393,-71.5936 44.5219,-71.5867 44.4993,-71.618 44.4854,-71.6544 44.4593,-71.6614 44.4402,-71.7031 44.4141,-71.7639 44.4072,-71.8004 44.3933,-71.8143 44.3811,-71.8126 44.355,-71.8369 44.3481,-71.8682 44.3394,-71.9169 44.355,-71.9325 44.3377,-71.9899 44.3307,-72.035 44.3185,-72.0385 44.3029,-72.0733 44.282,-72.0489 44.2421,-72.0698 44.1847,-72.0437 44.1569,-72.0333 44.1309,-72.0524 44.1204,-72.0489 44.0978,-72.0316 44.0996,-72.0298 44.0787,-72.0785 44.0422,-72.1167 43.9953,-72.115 43.9675,-72.1202 43.9188,-72.1706 43.8858,-72.1828 43.8632,-72.1828 43.8076,-72.2054 43.7711,-72.2349 43.7468,-72.2714 43.7346,-72.3062 43.7033,-72.3027 43.6686,-72.3148 43.6425,-72.3287 43.6356,-72.3305 43.6008,-72.3791 43.5747,-72.3809 43.54,-72.3983 43.5104,-72.3809 43.4878,-72.393 43.467,-72.4035 43.3923,-72.4139 43.3627,-72.3896 43.3575,-72.4104 43.3314,-72.3948 43.3123,-72.4156 43.2706,-72.4382 43.2532,-72.4348 43.2341,-72.4521 43.1611,-72.4574 43.1472,-72.433 43.1194,-72.4434 43.102,-72.4348 43.0846,-72.4678 43.0516,-72.4626 43.0256,-72.4434 43.0064,-72.4626 42.9978,-72.4747 42.9717,-72.5321 42.9543,-72.5251 42.9161,-72.5529 42.8848,-72.5564 42.8535,-72.539 42.8048,-72.4904 42.7718,-72.4591 42.7266))&quot;</value>
+                <value>44.1584</value>
+                <value>-72.767799999999994</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Longitude (generated)]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Latitude (generated)]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[med:PredictedObamaRate:qk]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[none:State:nk]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Geometry (generated)]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Latitude (generated)]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Longitude (generated)]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>-12.7428849266536</value>
+                <value>&quot;TX&quot;</value>
+                <value>&quot;MULTIPOLYGON(((-100.001 34.7463,-99.9976 34.5603,-99.9715 34.5621,-99.9541 34.5777,-99.9263 34.576,-99.8446 34.5065,-99.8203 34.4978,-99.8151 34.4769,-99.7543 34.4213,-99.7195 34.4057,-99.6952 34.3779,-99.6622 34.3744,-99.6465 34.3831,-99.5996 34.3744,-99.5735 34.4178,-99.5162 34.4144,-99.4745 34.3952,-99.438 34.3709,-99.4258 34.3848,-99.4015 34.3744,-99.3876 34.4109,-99.3963 34.4404,-99.3806 34.4578,-99.3198 34.4091,-99.292 34.4144,-99.259 34.3918,-99.2294 34.3501,-99.2068 34.3379,-99.2103 34.291,-99.1964 34.2805,-99.1964 34.244,-99.1895 34.2145,-99.153 34.2075,-99.1321 34.2197,-99.1251 34.2023,-99.0782 34.211,-99.0452 34.1989,-99.0122 34.2041,-98.9913 34.2214,-98.9687 34.2023,-98.9531 34.2128,-98.9183 34.1832,-98.8558 34.1606,-98.8141 34.1589,-98.7567 34.1241,-98.7341 34.1363,-98.6907 34.1328,-98.649 34.1641,-98.6107 34.1571,-98.5968 34.1589,-98.5516 34.1328,-98.5603 34.1241,-98.4856 34.0633,-98.423 34.0824,-98.4005 34.0998,-98.3987 34.1293,-98.3657 34.1571,-98.3257 34.1502,-98.2944 34.1328,-98.2336 34.1346,-98.218 34.1224,-98.1728 34.1137,-98.1398 34.1415,-98.112 34.1537,-98.0894 34.1293,-98.0998 34.105,-98.1207 34.0807,-98.1154 34.0633,-98.0824 34.0407,-98.0876 34.0042,-98.0285 33.9938,-97.9747 34.006,-97.9469 33.9903,-97.9608 33.9521,-97.9538 33.9243,-97.9799 33.9104,-97.9781 33.8895,-97.8756 33.8495,-97.8356 33.8582,-97.7974 33.8982,-97.7818 33.893,-97.7818 33.9191,-97.7626 33.9156,-97.7626 33.9347,-97.7279 33.9399,-97.6949 33.9816,-97.6705 33.992,-97.634 33.9816,-97.5906 33.9538,-97.5958 33.9138,-97.5611 33.8999,-97.5002 33.9191,-97.4846 33.9156,-97.4516 33.8912,-97.4603 33.8356,-97.4446 33.8235,-97.3751 33.8183,-97.3629 33.8252,-97.3317 33.8843,-97.3091 33.8878,-97.2708 33.8582,-97.2535 33.8669,-97.243 33.9052,-97.2048 33.9138,-97.1805 33.8947,-97.1666 33.8478,-97.1961 33.8304,-97.2048 33.7991,-97.1891 33.7783,-97.1926 33.7609,-97.1596 33.7279,-97.1231 33.7175,-97.0866 33.7435,-97.0936 33.8044,-97.0484 33.8183,-97.0414 33.8374,-97.0223 33.8461,-96.9841 33.8895,-96.9945 33.9486,-96.9789 33.9556,-96.9737 33.9364,-96.9441 33.9486,-96.9354 33.9538,-96.9059 33.9486,-96.8954 33.8965,-96.8676 33.8548,-96.8468 33.8495,-96.8329 33.8739,-96.7807 33.8617,-96.7634 33.8252,-96.7008 33.8374,-96.6869 33.86,-96.6817 33.8947,-96.6678 33.9173,-96.6278 33.8947,-96.5878 33.8947,-96.5896 33.8826,-96.6191 33.8617,-96.6278 33.8443,-96.5722 33.8183,-96.5322 33.8235,-96.5166 33.7887,-96.5009 33.7731,-96.4471 33.7818,-96.4227 33.7765,-96.4088 33.7505,-96.3793 33.7262,-96.3619 33.6914,-96.3411 33.6879,-96.3115 33.7088,-96.2941 33.7696,-96.2629 33.7679,-96.2281 33.7487,-96.1864 33.7557,-96.169 33.7696,-96.1777 33.8113,-96.1499 33.8183,-96.1482 33.8374,-96.1012 33.8304,-96.0995 33.8478,-96.0491 33.8374,-96.0248 33.8565,-96.0178 33.8409,-95.9518 33.8582,-95.9257 33.8843,-95.8458 33.8391,-95.8232 33.8374,-95.8197 33.8565,-95.8041 33.8617,-95.7623 33.8478,-95.7623 33.8739,-95.7484 33.8965,-95.7015 33.886,-95.665 33.9086,-95.6303 33.9052,-95.5938 33.9434,-95.5555 33.9277,-95.5434 33.8808,-95.5086 33.8982,-95.5051 33.8756,-95.4617 33.8878,-95.4634 33.8721,-95.4426 33.8669,-95.3626 33.8669,-95.3296 33.886,-95.3105 33.8773,-95.2792 33.8773,-95.2862 33.9034,-95.2671 33.9086,-95.2497 33.9382,-95.2253 33.9625,-95.1558 33.9364,-95.1228 33.933,-95.1315 33.9156,-95.0828 33.8808,-95.0655 33.9173,-95.0481 33.8634,-95.0012 33.8634,-94.9873 33.8513,-94.9699 33.8617,-94.9647 33.8374,-94.9438 33.8304,-94.949 33.8096,-94.923 33.8096,-94.9212 33.7922,-94.8673 33.7453,-94.803 33.7331,-94.7718 33.7609,-94.7526 33.7348,-94.7457 33.7036,-94.7353 33.6914,-94.6866 33.6844,-94.6675 33.6949,-94.6397 33.6636,-94.6223 33.6827,-94.5962 33.6636,-94.5597 33.6671,-94.5441 33.6479,-94.5702 33.6288,-94.5198 33.6184,-94.4867 33.6375,-94.4624 33.6306,-94.3859 33.5454,-94.3529 33.5437,-94.3425 33.568,-94.3147 33.5506,-94.2782 33.5576,-94.2573 33.5836,-94.2365 33.5819,-94.2504 33.5576,-94.2278 33.5524,-94.1948 33.5732,-94.1826 33.5941,-94.1635 33.5889,-94.1513 33.568,-94.1166 33.5663,-94.0731 33.5732,-94.0436 33.5524,-94.0436 33.2708,-94.0436 33.0188,-94.0436 32.8815,-94.0436 32.6938,-94.0436 32.3915,-94.0418 32.1968,-94.0418 31.9935,-94.0158 31.9796,-93.9723 31.9205,-93.9289 31.9118,-93.9237 31.8857,-93.9011 31.8962,-93.9011 31.8753,-93.882 31.8684,-93.8785 31.844,-93.8733 31.8145,-93.8403 31.8006,-93.8229 31.7745,-93.8368 31.7502,-93.8159 31.7293,-93.8159 31.7085,-93.7951 31.7033,-93.8263 31.6668,-93.8194 31.6146,-93.8385 31.6059,-93.835 31.5868,-93.8194 31.5555,-93.7864 31.5277,-93.7481 31.5312,-93.7429 31.5156,-93.7116 31.5121,-93.7499 31.4686,-93.7255 31.4547,-93.703 31.4547,-93.6925 31.4391,-93.7047 31.4113,-93.6734 31.3957,-93.6682 31.3522,-93.6734 31.3244,-93.6873 31.307,-93.6421 31.2688,-93.6195 31.2705,-93.6178 31.2323,-93.5969 31.2288,-93.6074 31.2062,-93.6004 31.1767,-93.5883 31.1663,-93.5518 31.1854,-93.5361 31.1593,-93.5483 31.1558,-93.5379 31.1245,-93.5518 31.0794,-93.5274 31.0741,-93.5309 31.0533,-93.5083 31.0307,-93.5552 31.0046,-93.5726 30.9716,-93.5309 30.9577,-93.5309 30.9247,-93.5587 30.9125,-93.5483 30.8986,-93.5726 30.8865,-93.5587 30.8691,-93.5691 30.8447,-93.5535 30.8343,-93.5622 30.8082,-93.583 30.803,-93.5935 30.7631,-93.6143 30.7596,-93.6178 30.7179,-93.63 30.6796,-93.6682 30.6605,-93.6821 30.6414,-93.6891 30.6119,-93.6786 30.5945,-93.7116 30.5893,-93.7273 30.5736,-93.729 30.5458,-93.7395 30.5389,-93.7082 30.5215,-93.7169 30.4954,-93.6995 30.4589,-93.7134 30.4329,-93.7412 30.4033,-93.7586 30.3894,-93.7586 30.339,-93.7412 30.3008,-93.7047 30.2904,-93.7064 30.2434,-93.7203 30.2087,-93.6995 30.1757,-93.6891 30.1409,-93.7012 30.1374,-93.703 30.1131,-93.7238 30.0836,-93.6995 30.061,-93.7221 30.0505,-93.7412 30.021,-93.7881 29.988,-93.8211 29.9115,-93.8542 29.8646,-93.9185 29.8229,-93.9271 29.7951,-93.8941 29.7673,-93.8924 29.7447,-93.8698 29.7342,-93.8385 29.6908,-94.061 29.6456,-94.2434 29.59,-94.3547 29.5483,-94.3703 29.5413,-94.4815 29.5014,-94.7422 29.3832,-94.7509 29.3884,-94.7318 29.4127,-94.6796 29.4527,-94.525 29.5309,-94.5597 29.5552,-94.6796 29.5431,-94.7405 29.5379,-94.7683 29.5552,-94.7318 29.6195,-94.7179 29.6717,-94.7248 29.7151,-94.7561 29.7429,-94.8048 29.736,-94.8934 29.6769,-94.9299 29.6751,-94.9369 29.6751,-94.9647 29.6751,-94.9925 29.6491,-94.9994 29.6178,-95.0029 29.5744,-94.9942 29.5309,-94.9699 29.5118,-94.9386 29.4875,-94.9038 29.4266,-94.8812 29.338,-94.8621 29.3154,-94.8239 29.3137,-94.8256 29.2859,-94.916 29.2146,-95.1176 29.0791,-95.3435 28.9279,-95.5034 28.8358,-95.5416 28.8149,-95.8127 28.6776,-96.3133 28.4326,-96.242 28.4864,-96.056 28.5838,-96.0178 28.6116,-96.0091 28.6324,-96.0282 28.6394,-96.0786 28.6307,-96.1986 28.6029,-96.2142 28.6098,-96.2107 28.6741,-96.2194 28.6863,-96.2455 28.6846,-96.3237 28.6567,-96.4314 28.6168,-96.4818 28.622,-96.5444 28.6533,-96.5878 28.7071,-96.633 28.7037,-96.6382 28.6741,-96.5965 28.5942,-96.5305 28.549,-96.4679 28.4725,-96.4853 28.4343,-96.5705 28.3874,-96.64 28.3665,-96.6852 28.3683,-96.7199 28.3839,-96.7582 28.3804,-96.7807 28.3544,-96.7912 28.3248,-96.7929 28.3196,-96.8155 28.2518,-96.8468 28.2136,-96.9198 28.1615,-96.9789 28.1354,-97.0119 28.1093,-97.0658 28.0103,-97.1422 27.9129,-97.1752 27.873,-97.2152 27.8538,-97.2378 27.8573,-97.2813 27.866,-97.3212 27.8556,-97.3577 27.8347,-97.3751 27.8087,-97.3751 27.7791,-97.3595 27.7478,-97.2986 27.6801,-97.2986 27.6297,-97.3195 27.5636,-97.3768 27.4194,-97.4046 27.3638,-97.4377 27.329,-97.4829 27.3064,-97.5054 27.3029,-97.5089 27.3377,-97.5836 27.2908,-97.5871 27.2786,-97.5889 27.263,-97.5576 27.2456,-97.4776 27.2439,-97.4533 27.2334,-97.4446 27.2056,-97.4516 27.1535,-97.4776 27.0961,-97.4863 27.0388,-97.4968 27.011,-97.5385 26.971,-97.5437 26.9345,-97.5263 26.8215,-97.4863 26.7347,-97.4533 26.6339,-97.4481 26.5991,-97.4185 26.4531,-97.3925 26.401,-97.3751 26.361,-97.3456 26.3367,-97.3351 26.2845,-97.3143 26.2515,-97.2969 26.1594,-97.2778 26.1073,-97.2239 26.069,-97.2065 26.01,-97.1787 26.0134,-97.1604 25.9551,-97.2729 25.9402,-97.3709 25.8778,-97.4469 25.8633,-97.5859 25.9512,-97.733 26.0349,-97.9224 26.0598,-98.1112 26.0598,-98.2566 26.086,-98.383 26.1713,-98.4745 26.2166,-98.5434 26.2328,-98.6239 26.246,-98.7458 26.3026,-98.8618 26.3614,-98.9362 26.3769,-99.0283 26.3986,-99.0865 26.4371,-99.1292 26.5069,-99.1877 26.6304,-99.2653 26.8159,-99.3868 26.9837,-99.4392 27.1182,-99.434 27.2129,-99.4689 27.2608,-99.488 27.3752,-99.5038 27.4887,-99.5197 27.5317,-99.5575 27.6034,-99.7194 27.6642,-99.81 27.7696,-99.8439 27.7851,-99.9047 27.8908,-99.9619 27.9881,-100.0408 28.0719,-100.15 28.1711,-100.2522 28.239,-100.3149 28.3573,-100.3728 28.4873,-100.4038 28.5648,-100.4477 28.6203,-100.5043 28.7026,-100.5548 28.8222,-100.6191 28.9062,-100.6563 29.0071,-100.7258 29.1386,-100.7946 29.2178,-100.8804 29.2893,-100.9088 29.3129,-101.0322 29.4115,-101.1583 29.4904,-101.2564 29.547,-101.3545 29.653,-101.4958 29.7723,-101.6229 29.7613,-101.7622 29.7865,-101.8734 29.7968,-101.9555 29.7988,-102.0493 29.8039,-102.2086 29.835,-102.3454 29.8295,-102.4527 29.7829,-102.5313 29.7648,-102.6121 29.7435,-102.7275 29.6426,-102.8018 29.4703,-102.8516 29.3759,-102.8904 29.3045,-102.8852 29.2389,-102.9289 29.2036,-103.012 29.1422,-103.0672 29.0805,-103.1225 29.0187,-103.2877 29.0019,-103.3595 29.0226,-103.4907 29.0995,-103.6349 29.1694,-103.7516 29.224,-103.9016 29.2886,-104.0917 29.3527,-104.2129 29.4532,-104.2995 29.5169,-104.4256 29.5796,-104.5617 29.7393,-104.6429 29.876,-104.6913 29.9811,-104.6955 30.0677,-104.6955 30.1602,-104.7825 30.3128,-104.8843 30.488,-104.9428 30.5998,-104.9917 30.6503,-105.0347 30.6861,-105.1384 30.7459,-105.3052 30.8277,-105.3996 30.8711,-105.4821 30.9428,-105.582 31.0382,-105.6911 31.1304,-105.7463 31.1679,-105.7883 31.2031,-105.8691 31.2887,-105.8928 31.2911,-105.9081 31.3122,-105.919 31.3132,-105.9401 31.3309,-105.9533 31.3644,-105.9707 31.3661,-105.9972 31.3872,-106.0341 31.3924,-106.1788 31.4752,-106.2852 31.5868,-106.3043 31.6233,-106.3791 31.7311,-106.4513 31.7644,-106.4926 31.7512,-106.5285 31.7832,-106.5476 31.8075,-106.5772 31.811,-106.605 31.8266,-106.6033 31.844,-106.6345 31.8666,-106.6293 31.8857,-106.645 31.9014,-106.6137 31.9535,-106.6363 31.9848,-106.6137 32.0004,-106.3773 32.0004,-105.9985 32.0022,-104.9175 32.0004,-104.848 32.0004,-104.0242 32.0004,-103.9808 32.0004,-103.7236 32.0004,-103.3273 32.0004,-103.0736 32.0004,-103.0649 32.0091,-103.0649 32.0873,-103.0649 32.5218,-103.0649 32.9597,-103.0562 33.389,-103.0528 33.5697,-103.0475 33.8252,-103.0441 34.3031,-103.0441 34.3136,-103.0423 34.748,-103.0423 34.9548,-103.0423 35.1825,-103.0423 35.6222,-103.0406 35.7386,-103.0406 36.0549,-103.0423 36.4998,-103.0024 36.4998,-102.163 36.4998,-102.0326 36.4998,-101.6242 36.4998,-101.0855 36.4998,-100.9534 36.4998,-100.5467 36.4998,-100.0045 36.4998,-100.001 36.0549,-100.001 35.8811,-100.001 35.6187,-99.9993 35.4223,-100.001 35.1825,-100.001 35.0296,-100.001 34.7463)),((-97.2343 26.4114,-97.2465 26.4114,-97.3091 26.5991,-97.3334 26.6721,-97.3577 26.7764,-97.3751 26.9276,-97.3768 27.0857,-97.3664 27.2213,-97.356 27.2786,-97.3421 27.3464,-97.3056 27.4559,-97.2465 27.581,-97.2326 27.6105,-97.1127 27.7948,-97.0918 27.8452,-97.0605 27.873,-97.0501 27.8799,-96.9737 27.9929,-96.8763 28.1041,-96.8277 28.125,-96.7773 28.1719,-96.5792 28.2866,-96.4297 28.3457,-96.4975 28.2901,-96.7408 28.1302,-96.8398 28.0485,-96.8555 28.0346,-96.9684 27.9181,-97.0362 27.833,-97.0814 27.7756,-97.1683 27.6436,-97.2048 27.5758,-97.2465 27.4958,-97.3038 27.3551,-97.3247 27.2769,-97.3403 27.2213,-97.3577 27.0996,-97.3577 26.9745,-97.3403 26.8337,-97.2813 26.6008,-97.2343 26.4114)))&quot;</value>
+                <value>31.25</value>
+                <value>-99.25</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Longitude (generated)]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Latitude (generated)]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[med:PredictedObamaRate:qk]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[none:State:nk]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Geometry (generated)]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Latitude (generated)]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Longitude (generated)]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>-5.0207220038398148</value>
+                <value>&quot;SD&quot;</value>
+                <value>&quot;POLYGON((-103.0006 43.0012,-103.5046 43.0012,-104.0538 43.0012,-104.0555 43.4774,-104.0555 43.5035,-104.0555 43.8528,-104.0538 44.1413,-104.0538 44.1812,-104.0555 44.5705,-104.0573 44.9981,-104.0399 45.0085,-104.0399 45.2136,-104.0434 45.8826,-104.0451 45.9452,-102.9954 45.9452,-102.9415 45.9452,-102.0013 45.9452,-101.9979 45.9452,-100.512 45.9435,-100.4998 45.9435,-99.8794 45.9417,-99.7178 45.9417,-99.0052 45.94,-98.7237 45.9382,-98.0077 45.9365,-97.9781 45.9365,-97.2291 45.9348,-96.5635 45.9348,-96.5844 45.8201,-96.6278 45.7853,-96.6643 45.7384,-96.746 45.7019,-96.8398 45.6463,-96.8572 45.6063,-96.8346 45.5855,-96.7634 45.5177,-96.7338 45.4603,-96.6904 45.4151,-96.6191 45.4082,-96.5218 45.3752,-96.4888 45.3578,-96.4697 45.3265,-96.4523 45.3004,-96.4523 45.2692,-96.4523 44.9772,-96.4523 44.8051,-96.4523 44.6314,-96.4523 44.5445,-96.4523 44.1969,-96.4523 43.8493,-96.454 43.5,-96.6 43.5,-96.5809 43.4809,-96.6035 43.4513,-96.5444 43.3957,-96.5253 43.3957,-96.5235 43.3471,-96.5357 43.3366,-96.5235 43.3123,-96.5513 43.2932,-96.5792 43.2949,-96.5844 43.2689,-96.5548 43.2602,-96.5496 43.2463,-96.5722 43.2393,-96.56 43.2237,-96.5357 43.2272,-96.5201 43.2185,-96.4749 43.2202,-96.4645 43.182,-96.4679 43.1524,-96.4366 43.1211,-96.4627 43.0933,-96.454 43.0829,-96.461 43.0638,-96.5096 43.0499,-96.5114 43.0273,-96.4923 43.0082,-96.5201 42.9804,-96.4992 42.9578,-96.5409 42.9248,-96.5392 42.9091,-96.5253 42.8917,-96.5496 42.8639,-96.5409 42.857,-96.5965 42.8153,-96.5948 42.7927,-96.6365 42.7701,-96.6348 42.7423,-96.6243 42.7249,-96.6296 42.7058,-96.6052 42.7023,-96.5427 42.6606,-96.5166 42.6293,-96.4957 42.5807,-96.4992 42.5615,-96.4766 42.5546,-96.4784 42.5285,-96.494 42.5164,-96.4766 42.5077,-96.4766 42.4903,-96.4453 42.4903,-96.4957 42.4816,-96.5409 42.5181,-96.5618 42.5198,-96.6035 42.5042,-96.6313 42.525,-96.64 42.5546,-96.6817 42.5754,-96.7095 42.605,-96.7095 42.6206,-96.6886 42.6537,-96.7269 42.6658,-96.7964 42.6676,-96.8068 42.704,-96.9076 42.7336,-96.9615 42.7197,-96.9684 42.7544,-97.0154 42.7614,-97.0658 42.7718,-97.1301 42.7718,-97.1596 42.7996,-97.2117 42.8101,-97.2204 42.8466,-97.2482 42.8552,-97.2882 42.8552,-97.3073 42.8674,-97.356 42.8552,-97.4081 42.8674,-97.4411 42.8466,-97.4846 42.85,-97.5037 42.8587,-97.5506 42.8483,-97.6062 42.8587,-97.6358 42.8518,-97.6931 42.8431,-97.7766 42.85,-97.8304 42.8691,-97.8756 42.8587,-97.8895 42.817,-97.9347 42.777,-98.0146 42.7631,-98.0581 42.7718,-98.1537 42.8396,-98.1867 42.8413,-98.2527 42.8726,-98.3101 42.8831,-98.4196 42.9317,-98.4439 42.93,-98.47 42.9508,-98.4978 42.9978,-99.2538 42.9978,-99.5336 42.9978,-100.1992 42.9995,-101.228 42.9978,-102.083 42.9995,-102.7921 42.9995,-103.0006 43.0012))&quot;</value>
+                <value>44.5</value>
+                <value>-100.25</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Longitude (generated)]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Latitude (generated)]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[med:PredictedObamaRate:qk]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[none:State:nk]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Geometry (generated)]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Latitude (generated)]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Longitude (generated)]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>-5.6138305969417104</value>
+                <value>&quot;RI&quot;</value>
+                <value>&quot;MULTIPOLYGON(((-71.1956 41.6752,-71.1331 41.6596,-71.1418 41.6127,-71.1313 41.5883,-71.1209 41.498,-71.1661 41.4858,-71.187 41.4962,-71.2217 41.5935,-71.2339 41.5796,-71.253 41.5032,-71.3103 41.4649,-71.3364 41.4719,-71.2686 41.6074,-71.1956 41.6752)),((-71.425 41.6526,-71.4198 41.6353,-71.4285 41.5675,-71.425 41.491,-71.4424 41.4476,-71.4807 41.4059,-71.5258 41.3815,-71.6075 41.3624,-71.7935 41.3259,-71.856 41.3224,-71.83 41.3415,-71.83 41.378,-71.8421 41.4093,-71.797 41.4163,-71.79 41.597,-71.7883 41.6405,-71.79 41.7239,-71.7987 42.0089,-71.498 42.0176,-71.3833 42.0193,-71.3816 41.9846,-71.3816 41.8942,-71.3399 41.8977,-71.3347 41.8629,-71.3468 41.8229,-71.3416 41.7986,-71.3173 41.776,-71.2617 41.7517,-71.2252 41.71,-71.2582 41.6717,-71.293 41.6683,-71.3069 41.6943,-71.3347 41.7065,-71.3764 41.6874,-71.4233 41.6787,-71.425 41.6526)),((-71.5571 41.173,-71.5623 41.1591,-71.5901 41.166,-71.5745 41.2008,-71.5571 41.173)))&quot;</value>
+                <value>41.75</value>
+                <value>-71.489999999999995</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Longitude (generated)]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Latitude (generated)]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[med:PredictedObamaRate:qk]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[none:State:nk]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Geometry (generated)]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Latitude (generated)]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Longitude (generated)]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>-13.0157948746206</value>
+                <value>&quot;PA&quot;</value>
+                <value>&quot;POLYGON((-79.9163 39.7201,-80.4221 39.7218,-80.5194 39.7218,-80.5194 39.9617,-80.5194 40.0155,-80.5194 40.1598,-80.5176 40.3996,-80.5194 40.4778,-80.5194 40.6394,-80.5194 40.8515,-80.5194 40.9001,-80.5194 41.1243,-80.5194 41.133,-80.5194 41.4893,-80.5194 41.4997,-80.5194 41.849,-80.5194 41.9776,-80.2378 42.0801,-80.1127 42.1549,-80.0119 42.174,-79.7617 42.2696,-79.7617 41.9985,-79.6105 41.9985,-79.0613 41.9985,-78.9188 41.9985,-78.3088 42.0002,-78.2063 42.0002,-77.7492 41.9985,-77.6102 42.0002,-76.9654 42.0019,-76.9272 42.0019,-76.557 42.0002,-76.1451 41.9985,-76.1052 41.9985,-75.483 41.9985,-75.3596 42.0002,-75.3422 41.9933,-75.3422 41.9724,-75.3144 41.9515,-75.2936 41.955,-75.2797 41.9394,-75.2675 41.9046,-75.271 41.889,-75.2588 41.8629,-75.2241 41.8577,-75.2049 41.8699,-75.1858 41.8594,-75.1737 41.8733,-75.1632 41.8507,-75.1459 41.8507,-75.1163 41.8438,-75.1128 41.8229,-75.0729 41.8125,-75.0989 41.7899,-75.1041 41.7743,-75.0642 41.7656,-75.0537 41.7517,-75.0503 41.7135,-75.0694 41.7082,-75.0537 41.6874,-75.0433 41.6231,-75.0694 41.6022,-75.019 41.5518,-75.0242 41.5345,-74.9842 41.5066,-74.9825 41.4806,-74.9408 41.4841,-74.913 41.4754,-74.8904 41.4545,-74.8921 41.4389,-74.8574 41.4441,-74.8296 41.4302,-74.8087 41.4423,-74.7913 41.4215,-74.7548 41.425,-74.7375 41.4302,-74.7409 41.4041,-74.6905 41.3676,-74.6957 41.3572,-74.7548 41.345,-74.7931 41.312,-74.8296 41.2877,-74.8678 41.2286,-74.8591 41.2199,-74.8834 41.1799,-74.9251 41.1382,-74.9808 41.1104,-74.9912 41.093,-74.9669 41.0948,-75.012 41.0652,-75.0259 41.0392,-75.1285 40.9922,-75.1354 40.9731,-75.1198 40.9679,-75.118 40.954,-75.0781 40.9123,-75.0746 40.8932,-75.052 40.8636,-75.0659 40.848,-75.0955 40.8463,-75.0833 40.8254,-75.1094 40.7906,-75.1372 40.7733,-75.1719 40.7767,-75.1963 40.7524,-75.1824 40.7316,-75.2032 40.6898,-75.1771 40.6759,-75.1997 40.6499,-75.1893 40.6255,-75.1963 40.6082,-75.1893 40.5925,-75.1824 40.5665,-75.1163 40.5734,-75.0694 40.5421,-75.0624 40.4813,-75.0711 40.457,-75.0607 40.4205,-75.0294 40.4048,-74.9964 40.41,-74.9669 40.3979,-74.9425 40.3423,-74.8678 40.2953,-74.8417 40.2502,-74.7705 40.2154,-74.7548 40.1859,-74.7218 40.1598,-74.7235 40.1476,-74.7844 40.1198,-74.8226 40.1268,-74.8365 40.1024,-74.8626 40.0833,-74.9286 40.0694,-74.9738 40.0486,-75.0138 40.0208,-75.0451 40.0103,-75.0607 39.9912,-75.132 39.9565,-75.1285 39.9095,-75.1406 39.8887,-75.1876 39.8817,-75.2119 39.8678,-75.271 39.8487,-75.3422 39.8452,-75.4152 39.8018,-75.4934 39.8313,-75.5803 39.8383,-75.5925 39.8383,-75.5942 39.8383,-75.6516 39.8261,-75.7002 39.8035,-75.7454 39.767,-75.7732 39.7218,-75.7889 39.7218,-76.1347 39.7218,-76.2338 39.7218,-76.239 39.7218,-76.5692 39.7218,-76.7864 39.7201,-77.0002 39.7201,-77.2174 39.7201,-77.459 39.7201,-77.4694 39.7201,-78.1003 39.7218,-78.3436 39.7218,-78.3801 39.7218,-78.8076 39.7236,-78.931 39.7236,-79.3932 39.7218,-79.4767 39.7218,-79.7634 39.7201,-79.9163 39.7201))&quot;</value>
+                <value>40.859999999999999</value>
+                <value>-77.900000000000006</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Longitude (generated)]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Latitude (generated)]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[med:PredictedObamaRate:qk]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[none:State:nk]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Geometry (generated)]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Latitude (generated)]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Longitude (generated)]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>-12.30312421630615</value>
+                <value>&quot;OR&quot;</value>
+                <value>&quot;POLYGON((-119.361 41.995,-119.9988 41.995,-120.88 41.9933,-121.4482 41.9967,-122.2894 42.0072,-123.2313 42.0037,-123.5181 42.0002,-123.8222 41.995,-124.2115 41.9985,-124.2966 42.0437,-124.3436 42.0923,-124.3974 42.2505,-124.4374 42.4364,-124.3992 42.5789,-124.4218 42.6519,-124.5121 42.7388,-124.5556 42.8361,-124.5069 42.9543,-124.4079 43.1907,-124.387 43.2967,-124.314 43.4096,-124.2758 43.493,-124.2323 43.6095,-124.1889 43.7711,-124.1715 43.8632,-124.1315 44.077,-124.1072 44.2786,-124.0811 44.4193,-124.0724 44.6209,-124.0551 44.8051,-124.0081 45.0432,-123.9803 45.184,-123.9751 45.2674,-123.9838 45.3404,-123.9699 45.3995,-123.9508 45.6498,-123.9664 45.7836,-123.9838 45.9435,-123.9404 46.0199,-123.9456 46.0651,-124.0168 46.2111,-124.0151 46.2372,-123.8708 46.1711,-123.8205 46.1902,-123.5806 46.2285,-123.5632 46.2615,-123.4763 46.2684,-123.4294 46.2285,-123.4277 46.1798,-123.3634 46.1468,-123.28 46.1451,-123.2122 46.1729,-123.167 46.1885,-123.1166 46.185,-122.9028 46.0808,-122.8855 46.0616,-122.8768 46.0304,-122.8559 46.0147,-122.8125 45.9556,-122.8107 45.9104,-122.7847 45.8514,-122.7951 45.8166,-122.769 45.7784,-122.7621 45.728,-122.7725 45.6915,-122.7621 45.6567,-122.6752 45.6185,-122.5501 45.5976,-122.4406 45.5646,-122.3815 45.575,-122.3502 45.5663,-122.3241 45.5472,-122.2494 45.5472,-122.1782 45.5785,-122.1069 45.5837,-121.9818 45.6237,-121.954 45.6445,-121.9227 45.6498,-121.8723 45.6897,-121.8184 45.7054,-121.7107 45.6949,-121.523 45.7245,-121.4413 45.6967,-121.4083 45.6932,-121.3353 45.7036,-121.2362 45.6758,-121.2084 45.6602,-121.1945 45.6167,-121.1789 45.6063,-121.1285 45.6115,-121.0746 45.6498,-120.9825 45.648,-120.9477 45.6567,-120.9164 45.6411,-120.8956 45.6428,-120.84 45.6758,-120.6923 45.7158,-120.654 45.7367,-120.6314 45.7453,-120.5793 45.7436,-120.4889 45.6967,-120.4003 45.7002,-120.2126 45.7262,-120.1605 45.7662,-120.0579 45.7905,-119.9988 45.8131,-119.9658 45.8235,-119.8685 45.8357,-119.6826 45.8566,-119.6634 45.8635,-119.6148 45.9104,-119.5887 45.9226,-119.4983 45.907,-119.4323 45.9174,-119.262 45.94,-119.1959 45.9278,-119.1351 45.9313,-119.043 45.9643,-118.9874 45.9991,-117.9968 46.0008,-117.9777 46.0008,-117.6023 45.9991,-117.4807 45.9973,-116.9158 45.9956,-116.8759 45.9539,-116.8585 45.9052,-116.7942 45.8566,-116.7872 45.8305,-116.7629 45.8166,-116.7108 45.8253,-116.6639 45.7818,-116.5943 45.7784,-116.5474 45.7523,-116.5352 45.7332,-116.5352 45.6915,-116.4901 45.6515,-116.464 45.615,-116.4831 45.5768,-116.5283 45.5507,-116.5352 45.5246,-116.5578 45.5038,-116.5544 45.4638,-116.5874 45.443,-116.5978 45.4134,-116.6239 45.3943,-116.6743 45.3213,-116.6743 45.2761,-116.6864 45.2674,-116.7038 45.2396,-116.7299 45.144,-116.756 45.1145,-116.7768 45.1041,-116.7838 45.0797,-116.8011 45.0571,-116.8481 45.0224,-116.8446 45.0015,-116.8585 44.9789,-116.8324 44.9303,-116.8585 44.8799,-116.8985 44.8538,-116.9002 44.8399,-116.9315 44.8051,-116.935 44.7843,-116.9993 44.7565,-117.0375 44.7478,-117.0618 44.7269,-117.0618 44.7061,-117.0948 44.6644,-117.1001 44.64,-117.1209 44.6122,-117.1261 44.5827,-117.147 44.5653,-117.1435 44.5549,-117.1609 44.5253,-117.1817 44.5219,-117.2009 44.4923,-117.2252 44.4819,-117.2148 44.4263,-117.2426 44.3915,-117.2356 44.3742,-117.1904 44.3359,-117.22 44.3012,-117.2165 44.2873,-117.1696 44.2595,-117.1418 44.2595,-117.1053 44.2803,-117.0514 44.2282,-117.0305 44.249,-116.9767 44.2421,-116.9715 44.1969,-116.9297 44.1917,-116.9019 44.1795,-116.8985 44.1517,-116.935 44.0978,-116.9767 44.0857,-116.9732 44.0492,-116.935 44.0248,-116.9454 44.0022,-116.935 43.9901,-116.9593 43.9658,-116.9697 43.9379,-116.9628 43.9171,-116.9801 43.9136,-116.9836 43.8806,-116.9836 43.8667,-117.0201 43.858,-117.0114 43.8424,-117.0323 43.8337,-117.0219 43.8198,-117.0271 43.6807,-117.0253 42.0002,-118.1967 41.9967,-119.3246 41.9933,-119.361 41.995))&quot;</value>
+                <value>44.0</value>
+                <value>-120.5</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Longitude (generated)]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Latitude (generated)]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[med:PredictedObamaRate:qk]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[none:State:nk]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Geometry (generated)]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Latitude (generated)]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Longitude (generated)]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>-9.7000047190933714</value>
+                <value>&quot;OH&quot;</value>
+                <value>&quot;POLYGON((-81.7568 39.1814,-81.7429 39.1431,-81.7481 39.0962,-81.7759 39.0788,-81.8141 39.0788,-81.8037 39.0475,-81.7637 39.0163,-81.7811 38.9641,-81.7568 38.9363,-81.7793 38.9242,-81.8124 38.945,-81.8437 38.9311,-81.8471 38.9033,-81.8888 38.8738,-81.908 38.879,-81.9288 38.8963,-81.8993 38.9294,-81.9184 38.9676,-81.941 38.9937,-81.9792 38.9937,-82.0035 39.0284,-82.0383 39.0232,-82.0505 38.9954,-82.0904 38.9746,-82.0991 38.9589,-82.1287 38.9085,-82.1426 38.8981,-82.146 38.8407,-82.2121 38.8008,-82.2208 38.773,-82.1982 38.7573,-82.1825 38.7087,-82.1912 38.6809,-82.1721 38.6252,-82.1825 38.5992,-82.219 38.5922,-82.2625 38.5974,-82.2868 38.5835,-82.3042 38.4949,-82.3268 38.448,-82.3807 38.4341,-82.405 38.4393,-82.5075 38.4115,-82.5683 38.4045,-82.5927 38.4219,-82.6101 38.4723,-82.6657 38.5053,-82.69 38.5383,-82.7265 38.5592,-82.7873 38.5592,-82.8151 38.5714,-82.8516 38.6061,-82.8586 38.6583,-82.8777 38.6878,-82.8707 38.7278,-82.8794 38.7521,-82.9229 38.7504,-82.9715 38.7278,-83.0306 38.726,-83.0532 38.6948,-83.114 38.6704,-83.1314 38.6357,-83.1471 38.6235,-83.2009 38.6166,-83.2426 38.6287,-83.267 38.6183,-83.2878 38.5992,-83.3174 38.6096,-83.3278 38.6374,-83.3573 38.6548,-83.4686 38.6756,-83.5207 38.7034,-83.6267 38.6791,-83.6441 38.6357,-83.6684 38.627,-83.7049 38.6391,-83.7675 38.6548,-83.7866 38.6982,-83.837 38.7173,-83.8596 38.7573,-83.903 38.7677,-83.9621 38.7869,-84.0525 38.7712,-84.2072 38.8025,-84.2298 38.8268,-84.2315 38.8755,-84.2367 38.8963,-84.2906 38.9589,-84.301 38.9989,-84.3201 39.0215,-84.3566 39.0406,-84.4261 39.0528,-84.4348 39.1014,-84.4539 39.1205,-84.4765 39.1205,-84.5061 39.0945,-84.5495 39.0997,-84.5739 39.0823,-84.6243 39.0736,-84.6573 39.0945,-84.6868 39.1014,-84.7181 39.1362,-84.7424 39.1466,-84.7616 39.1414,-84.7876 39.1153,-84.8206 39.1049,-84.8189 39.3048,-84.8154 39.522,-84.8154 39.5672,-84.8137 39.7271,-84.812 39.9165,-84.8102 40.0051,-84.8033 40.3092,-84.8033 40.3527,-84.8033 40.5717,-84.8015 40.7281,-84.8033 40.9227,-84.8033 40.9888,-84.8033 41.2529,-84.8033 41.272,-84.8033 41.4267,-84.805 41.531,-84.8067 41.6961,-84.4001 41.7065,-84.3601 41.7065,-83.8804 41.7204,-83.764 41.7239,-83.4547 41.7343,-83.4321 41.7117,-83.4043 41.6996,-83.2983 41.6752,-83.1662 41.6231,-82.9594 41.5431,-82.9038 41.5414,-82.8481 41.5657,-82.8221 41.5657,-82.7404 41.5362,-82.6883 41.4997,-82.6048 41.4423,-82.5284 41.4128,-82.4536 41.4076,-82.3442 41.4284,-82.0279 41.491,-81.9705 41.4927,-81.8106 41.5014,-81.7255 41.5171,-81.6316 41.557,-81.4891 41.6353,-81.2945 41.7413,-81.0442 41.8316,-81.0043 41.8438,-80.5194 41.9776,-80.5194 41.849,-80.5194 41.4997,-80.5194 41.4893,-80.5194 41.133,-80.5194 41.1243,-80.5194 40.9001,-80.5194 40.8515,-80.5194 40.6394,-80.5767 40.6151,-80.5993 40.6255,-80.6271 40.6203,-80.6671 40.5821,-80.6636 40.5699,-80.6271 40.5352,-80.6184 40.5022,-80.5959 40.4726,-80.6115 40.4361,-80.6115 40.4031,-80.6289 40.3944,-80.608 40.3718,-80.6132 40.3475,-80.6011 40.3162,-80.6184 40.2658,-80.6532 40.2449,-80.6688 40.1998,-80.681 40.1859,-80.7036 40.1581,-80.7088 40.1007,-80.7384 40.0764,-80.7331 40.0329,-80.7418 40.0086,-80.7401 39.9721,-80.7644 39.9495,-80.7557 39.913,-80.8061 39.9165,-80.8096 39.9043,-80.7905 39.8678,-80.8218 39.8504,-80.8253 39.8018,-80.8704 39.7636,-80.8339 39.7201,-80.8339 39.7045,-80.8635 39.6923,-80.867 39.6541,-80.8791 39.6228,-80.926 39.6176,-80.9434 39.6071,-81.039 39.5394,-81.0929 39.4959,-81.1207 39.4577,-81.1346 39.4455,-81.1833 39.4334,-81.2163 39.3882,-81.2719 39.3864,-81.3466 39.3465,-81.3709 39.3412,-81.3901 39.3482,-81.4161 39.3969,-81.4561 39.409,-81.5552 39.3395,-81.5691 39.2683,-81.6768 39.2752,-81.6959 39.2561,-81.6925 39.2265,-81.7255 39.2161,-81.7376 39.1918,-81.7568 39.1814))&quot;</value>
+                <value>40.25</value>
+                <value>-83.0</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Longitude (generated)]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Latitude (generated)]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[med:PredictedObamaRate:qk]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[none:State:nk]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Geometry (generated)]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Latitude (generated)]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Longitude (generated)]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>7.4052955432504302</value>
+                <value>&quot;NC&quot;</value>
+                <value>&quot;MULTIPOLYGON(((-75.7489 35.179,-75.9366 35.1095,-75.9401 35.1234,-75.7541 35.1981,-75.6429 35.2433,-75.5682 35.2868,-75.5386 35.3285,-75.5143 35.4171,-75.49 35.4414,-75.516 35.2677,-75.5751 35.2312,-75.7489 35.179)),((-83.9361 34.9879,-84.0056 34.9879,-84.129 34.9879,-84.3219 34.9879,-84.2923 35.2068,-84.2906 35.2259,-84.2263 35.2677,-84.2106 35.2659,-84.1881 35.2398,-84.1481 35.2468,-84.0977 35.2468,-84.0542 35.2694,-84.0299 35.292,-84.0299 35.332,-84.0386 35.3476,-84.0073 35.3719,-84.023 35.4119,-83.9604 35.464,-83.9534 35.4606,-83.9135 35.4762,-83.8804 35.5179,-83.8283 35.5249,-83.764 35.5631,-83.6632 35.5683,-83.6406 35.5666,-83.6076 35.5787,-83.5833 35.5631,-83.4981 35.5631,-83.446 35.61,-83.3973 35.6239,-83.3417 35.6639,-83.2983 35.6569,-83.2878 35.6726,-83.2548 35.6952,-83.2548 35.7143,-83.2392 35.7247,-83.1905 35.7282,-83.161 35.7647,-83.121 35.7664,-83.0793 35.789,-83.0358 35.7873,-82.9959 35.7734,-82.9611 35.7908,-82.9455 35.8238,-82.9159 35.8412,-82.9211 35.8672,-82.902 35.8933,-82.9194 35.928,-82.902 35.928,-82.8985 35.9454,-82.8516 35.9489,-82.8221 35.9228,-82.7769 35.9698,-82.7752 36.001,-82.7508 36.0063,-82.6361 36.0653,-82.6031 36.0393,-82.5909 36.0323,-82.6135 36.0045,-82.6101 35.968,-82.5579 35.9541,-82.5405 35.968,-82.5058 35.9784,-82.4606 36.008,-82.4172 36.0723,-82.4032 36.0879,-82.3546 36.1157,-82.3355 36.1157,-82.2903 36.1349,-82.2451 36.1314,-82.2225 36.1574,-82.1773 36.1435,-82.1495 36.1488,-82.1304 36.1053,-82.08 36.1036,-82.0539 36.1262,-82.0296 36.1244,-81.9323 36.2652,-81.9184 36.2878,-81.9062 36.3034,-81.8784 36.3139,-81.8558 36.3364,-81.7933 36.3625,-81.7654 36.3399,-81.722 36.3521,-81.7342 36.3799,-81.729 36.3921,-81.7411 36.4112,-81.7185 36.4251,-81.7168 36.4564,-81.6942 36.4668,-81.6959 36.5068,-81.7081 36.5363,-81.6907 36.5519,-81.6768 36.5884,-81.3536 36.5745,-80.9017 36.5624,-80.8374 36.5589,-80.6115 36.5572,-80.4394 36.5502,-80.0536 36.5433,-80.0276 36.5433,-79.7147 36.5415,-79.5114 36.5415,-79.4697 36.5415,-79.3428 36.5415,-79.2194 36.5415,-79.1378 36.5415,-78.7971 36.5415,-78.7346 36.5415,-78.4565 36.5433,-78.3244 36.5433,-78.0464 36.545,-77.9004 36.545,-77.7666 36.545,-77.2974 36.545,-77.1653 36.5467,-76.9168 36.5433,-76.9168 36.5519,-76.5414 36.5502,-76.491 36.5502,-76.3137 36.5502,-76.1225 36.5502,-75.8671 36.5502,-75.808 36.3556,-75.7611 36.2322,-75.5751 35.8585,-75.6498 35.9559,-75.7072 36.0149,-75.7263 36.0445,-75.7958 36.2235,-75.8653 36.4042,-75.9244 36.4685,-75.9713 36.4842,-75.9992 36.4807,-76.0026 36.4633,-75.9887 36.4442,-75.9383 36.4112,-75.9227 36.3834,-75.8688 36.2652,-75.8288 36.1505,-75.8306 36.1192,-75.8931 36.1383,-75.9123 36.147,-75.9922 36.1644,-76.0322 36.1627,-76.1086 36.1383,-76.1921 36.1175,-76.4023 36.0653,-76.5084 36.0236,-76.6404 36.0184,-76.6509 36.0097,-76.6735 35.975,-76.6613 35.9593,-76.6178 35.9489,-76.4527 35.9645,-76.3589 35.9628,-76.305 35.9611,-76.1399 35.9802,-76.0826 35.9767,-76.0478 35.9663,-75.987 35.9211,-75.9592 35.9194,-75.9209 35.9489,-75.8879 35.9559,-75.8427 35.942,-75.7958 35.9037,-75.7576 35.8359,-75.735 35.716,-75.7576 35.6291,-75.7923 35.5961,-75.8671 35.5648,-75.9279 35.5301,-76.0235 35.431,-76.1052 35.3771,-76.1729 35.3545,-76.3641 35.3598,-76.5275 35.3789,-76.5379 35.3789,-76.5727 35.3754,-76.5952 35.3563,-76.5935 35.3493,-76.5205 35.3094,-76.4979 35.285,-76.4927 35.2537,-76.5084 35.212,-76.5588 35.1269,-76.6213 35.0522,-76.6283 35.0278,-76.6022 35.0087,-76.5674 35.0087,-76.517 35.0209,-76.4771 35.04,-76.4458 35.0348,-76.3902 34.9965,-76.3589 34.9965,-76.3415 35.007,-76.3189 35,-76.3068 34.9792,-76.3102 34.9392,-76.3415 34.8957,-76.3763 34.8627,-76.3572 34.8419,-76.1729 34.9774,-76.1816 34.9514,-76.5101 34.6524,-76.557 34.6403,-76.703 34.6733,-76.8212 34.675,-76.9706 34.6559,-77.1149 34.6212,-77.2244 34.5812,-77.5076 34.4265,-77.6467 34.3309,-77.7023 34.2805,-77.737 34.2493,-77.8083 34.1641,-77.9404 33.9434,-77.989 33.8965,-78.0273 33.893,-78.2323 33.9034,-78.3557 33.8947,-78.4548 33.8791,-78.5434 33.8513,-78.6512 33.9434,-79.0717 34.2997,-79.4506 34.6212,-79.461 34.6298,-79.6678 34.7984,-79.6922 34.8054,-79.9268 34.8071,-80.3213 34.8141,-80.5611 34.8175,-80.7957 34.821,-80.7818 34.934,-80.8409 35.0018,-80.9069 35.0765,-80.9365 35.106,-81.0425 35.0452,-81.0581 35.0626,-81.0564 35.0852,-81.0338 35.1078,-81.0512 35.1321,-81.0338 35.1495,-81.3275 35.1634,-81.3657 35.1651,-81.7689 35.1808,-81.8749 35.1842,-81.9688 35.1877,-82.2156 35.1964,-82.2816 35.1999,-82.325 35.1842,-82.3529 35.1912,-82.372 35.1808,-82.3928 35.2155,-82.4206 35.1964,-82.4397 35.1651,-82.4554 35.1773,-82.5284 35.1564,-82.5544 35.1616,-82.5753 35.146,-82.6118 35.139,-82.657 35.1199,-82.6813 35.1269,-82.697 35.0956,-82.7265 35.0939,-82.7647 35.0678,-82.7821 35.0643,-82.7838 35.0852,-82.8968 35.0556,-83.008 35.0278,-83.1088 35,-83.4825 34.9931,-83.5485 34.9931,-83.9361 34.9879)),((-75.6481 35.9072,-75.6307 35.8655,-75.6359 35.8325,-75.6533 35.8394,-75.6898 35.9107,-75.6794 35.9176,-75.6481 35.9072)))&quot;</value>
+                <value>35.5</value>
+                <value>-80.0</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Longitude (generated)]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Latitude (generated)]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[med:PredictedObamaRate:qk]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[none:State:nk]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Geometry (generated)]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Latitude (generated)]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Longitude (generated)]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>-0.72916874267179199</value>
+                <value>&quot;MT&quot;</value>
+                <value>&quot;POLYGON((-108.249 44.9998,-108.6209 44.9998,-109.7992 45.0015,-110.1016 45.0033,-110.1989 44.9963,-110.3623 44.9998,-110.6073 44.9928,-110.7047 44.9928,-110.795 45.0033,-111.0435 45.0015,-111.0557 44.9981,-111.0557 44.6661,-111.0488 44.4732,-111.1235 44.4941,-111.1391 44.534,-111.1774 44.5514,-111.1843 44.5705,-111.2278 44.5775,-111.2417 44.614,-111.2191 44.6227,-111.2538 44.6505,-111.2782 44.6505,-111.2677 44.6679,-111.2955 44.6904,-111.2955 44.7009,-111.3233 44.7287,-111.3546 44.7269,-111.3772 44.7513,-111.3946 44.7513,-111.3981 44.7269,-111.4137 44.7113,-111.4363 44.72,-111.4728 44.7096,-111.4902 44.7009,-111.4693 44.68,-111.4902 44.6418,-111.5197 44.6157,-111.5232 44.5966,-111.5023 44.5705,-111.5076 44.5636,-111.4693 44.5566,-111.4641 44.541,-111.5128 44.5375,-111.5475 44.5566,-111.5858 44.5636,-111.617 44.5514,-111.7039 44.5566,-111.7161 44.5445,-111.7474 44.5393,-111.763 44.5271,-111.803 44.5253,-111.8204 44.5097,-111.869 44.5636,-111.9472 44.5566,-111.9768 44.5358,-112.0324 44.5462,-112.0324 44.5288,-112.0689 44.5358,-112.1037 44.5201,-112.1384 44.5393,-112.1819 44.5323,-112.2201 44.5427,-112.2305 44.5636,-112.2879 44.5671,-112.3191 44.5393,-112.3539 44.5358,-112.3574 44.4906,-112.3869 44.4489,-112.4321 44.4541,-112.4721 44.4802,-112.5016 44.4645,-112.5416 44.4836,-112.5781 44.4802,-112.6007 44.4906,-112.6615 44.4854,-112.7084 44.5028,-112.7432 44.4889,-112.7849 44.4784,-112.8388 44.4263,-112.8144 44.3985,-112.8144 44.3776,-112.8544 44.3603,-112.8805 44.3794,-112.8874 44.4037,-112.9031 44.3985,-112.9465 44.4159,-113.0039 44.4506,-113.0073 44.4715,-113.0265 44.4958,-113.0108 44.5253,-113.0438 44.5462,-113.0421 44.5636,-113.0769 44.6018,-113.0525 44.6227,-113.0717 44.6783,-113.0977 44.6974,-113.1029 44.7269,-113.1342 44.753,-113.1325 44.7739,-113.1638 44.7791,-113.1933 44.8017,-113.2472 44.8225,-113.341 44.7843,-113.3567 44.8191,-113.3775 44.8347,-113.4227 44.8382,-113.4297 44.8555,-113.454 44.8642,-113.4714 44.9094,-113.4992 44.9424,-113.4436 44.9598,-113.447 44.9981,-113.4383 45.0067,-113.4557 45.0398,-113.4522 45.0589,-113.4853 45.0641,-113.4887 45.0763,-113.52 45.0919,-113.5113 45.1128,-113.5548 45.1145,-113.5756 45.1319,-113.5652 45.1458,-113.5895 45.1562,-113.593 45.184,-113.6921 45.2622,-113.6816 45.2796,-113.739 45.33,-113.7303 45.3561,-113.7338 45.3891,-113.7755 45.4082,-113.7755 45.4464,-113.7842 45.4534,-113.7599 45.4812,-113.772 45.5125,-113.8346 45.5212,-113.8172 45.5577,-113.7963 45.582,-113.8103 45.6046,-113.8537 45.622,-113.9041 45.622,-113.8954 45.6445,-113.9197 45.6584,-113.9371 45.6949,-113.9632 45.6897,-113.9875 45.7054,-114.0171 45.6949,-114.0257 45.6741,-114.0171 45.6515,-114.0675 45.6272,-114.0866 45.5924,-114.1231 45.5837,-114.1352 45.5594,-114.1804 45.5507,-114.1926 45.5368,-114.2482 45.5455,-114.2482 45.5229,-114.2708 45.4847,-114.3316 45.4603,-114.3594 45.4725,-114.3681 45.4916,-114.4255 45.5125,-114.4307 45.5298,-114.4637 45.5455,-114.4585 45.5611,-114.4967 45.5559,-114.5245 45.5698,-114.5645 45.5577,-114.5575 45.5855,-114.5384 45.6063,-114.5628 45.6376,-114.5071 45.6584,-114.5002 45.6793,-114.5141 45.6845,-114.4967 45.7036,-114.5054 45.7227,-114.5471 45.7436,-114.5454 45.7592,-114.5645 45.7714,-114.5454 45.7905,-114.5089 45.8444,-114.4741 45.8479,-114.4394 45.8618,-114.4098 45.8514,-114.3872 45.8844,-114.3942 45.9,-114.4307 45.9365,-114.4029 45.9591,-114.4133 45.9782,-114.4585 45.9973,-114.4811 45.9939,-114.4811 46.0304,-114.5071 46.0321,-114.4932 46.0529,-114.4689 46.0634,-114.4602 46.0964,-114.4741 46.112,-114.521 46.1242,-114.5263 46.1451,-114.5141 46.1676,-114.4759 46.1607,-114.4446 46.1694,-114.4481 46.2319,-114.4672 46.2476,-114.4706 46.2667,-114.4272 46.2841,-114.4324 46.3049,-114.4133 46.3362,-114.4098 46.3606,-114.422 46.3866,-114.3855 46.411,-114.3803 46.4596,-114.3994 46.477,-114.4029 46.4978,-114.3577 46.5048,-114.342 46.5187,-114.3473 46.5517,-114.3299 46.576,-114.3438 46.59,-114.3229 46.6108,-114.3212 46.6386,-114.3334 46.6612,-114.3577 46.6699,-114.4533 46.649,-114.4672 46.6317,-114.5419 46.649,-114.594 46.6334,-114.6132 46.6386,-114.6149 46.6543,-114.6392 46.6647,-114.6236 46.6925,-114.6253 46.7116,-114.6496 46.7325,-114.6757 46.7377,-114.6983 46.7411,-114.7122 46.7168,-114.74 46.7116,-114.7522 46.6977,-114.7887 46.7133,-114.7678 46.7394,-114.7661 46.7585,-114.7991 46.7759,-114.8286 46.7829,-114.8651 46.8141,-114.8964 46.8055,-114.8964 46.8194,-114.9242 46.8315,-114.926 46.8506,-114.9468 46.8611,-114.9312 46.8767,-114.9364 46.8976,-114.9242 46.9167,-114.959 46.9323,-115.0059 46.9723,-115.0494 46.9705,-115.0667 46.9966,-115.072 47.0227,-115.0893 47.0435,-115.1276 47.0679,-115.1432 47.1009,-115.1693 47.1061,-115.2006 47.1374,-115.244 47.1513,-115.2614 47.1808,-115.2996 47.1895,-115.2944 47.2173,-115.317 47.2347,-115.3205 47.2556,-115.4108 47.2643,-115.4247 47.2782,-115.4821 47.2816,-115.529 47.3007,-115.5533 47.3494,-115.6159 47.3824,-115.6437 47.379,-115.6594 47.4015,-115.7219 47.4241,-115.7567 47.4224,-115.748 47.4415,-115.7184 47.4519,-115.6455 47.4572,-115.6281 47.4797,-115.6854 47.485,-115.7098 47.5162,-115.6976 47.5301,-115.7549 47.5475,-115.6889 47.5944,-115.6959 47.624,-115.7341 47.6518,-115.7254 47.6987,-115.7549 47.7178,-115.7758 47.7196,-115.7827 47.7439,-115.7984 47.7578,-115.8314 47.7561,-115.847 47.7856,-115.8523 47.8273,-115.8818 47.8499,-115.9009 47.843,-115.9392 47.8829,-115.9687 47.9003,-115.967 47.9125,-115.993 47.9264,-116.0191 47.9629,-116.0486 47.9768,-116.0504 48.2149,-116.0486 48.5016,-116.0492 49.0009,-114.0686 48.9991,-110.005 48.9991,-104.0487 48.9982,-104.0486 48.6337,-104.0468 48.3887,-104.0434 47.9959,-104.0451 47.3981,-104.0451 47.3303,-104.0451 46.6421,-104.0451 46.5413,-104.0451 46.2806,-104.0451 45.9452,-104.0434 45.8826,-104.0399 45.2136,-104.0399 45.0085,-104.0573 44.9981,-105.0392 44.9998,-105.0774 44.9998,-105.9098 45.0015,-106.0245 44.9928,-106.2644 44.9946,-107.9119 45.0015,-108.249 44.9998))&quot;</value>
+                <value>47.0</value>
+                <value>-109.75</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Longitude (generated)]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Latitude (generated)]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[med:PredictedObamaRate:qk]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[none:State:nk]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Geometry (generated)]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Latitude (generated)]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Longitude (generated)]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>18.6909764615122</value>
+                <value>&quot;MS&quot;</value>
+                <value>&quot;POLYGON((-89.5234 30.1809,-89.532 30.1948,-89.572 30.1809,-89.5981 30.2139,-89.6155 30.2226,-89.6137 30.2452,-89.6294 30.2556,-89.6328 30.2799,-89.6467 30.2904,-89.6259 30.3147,-89.6294 30.339,-89.6572 30.3564,-89.6832 30.4068,-89.678 30.4172,-89.6902 30.4589,-89.7058 30.4641,-89.7249 30.492,-89.758 30.4989,-89.7806 30.5441,-89.8032 30.5597,-89.8223 30.6049,-89.8136 30.6379,-89.8431 30.6657,-89.8362 30.6918,-89.8466 30.7057,-89.831 30.7161,-89.8223 30.7544,-89.8292 30.7822,-89.8032 30.7909,-89.7979 30.8204,-89.7823 30.8187,-89.7823 30.8552,-89.7684 30.8656,-89.7736 30.8986,-89.7458 30.9195,-89.7562 30.9421,-89.7284 30.9681,-89.7371 30.9768,-89.7284 31.0029,-89.8362 31.0029,-90.2602 31.0012,-90.3471 31.0012,-90.547 30.9994,-90.5678 30.9994,-90.825 30.9994,-91.0596 30.9994,-91.1761 30.9994,-91.6366 30.9994,-91.5793 31.0237,-91.5601 31.0498,-91.5671 31.0689,-91.6279 31.1228,-91.5932 31.1697,-91.5897 31.1906,-91.6071 31.2132,-91.6488 31.2392,-91.654 31.2566,-91.6366 31.267,-91.5515 31.2636,-91.5132 31.281,-91.508 31.314,-91.548 31.347,-91.5462 31.3817,-91.5688 31.38,-91.5758 31.4096,-91.5428 31.4321,-91.5202 31.3748,-91.5045 31.3644,-91.475 31.3678,-91.4767 31.3974,-91.5132 31.4461,-91.5132 31.5329,-91.4802 31.5312,-91.4454 31.5416,-91.4055 31.5764,-91.4211 31.5972,-91.4889 31.5868,-91.5167 31.6111,-91.515 31.6303,-91.4941 31.6442,-91.4733 31.6251,-91.4368 31.6129,-91.4003 31.6198,-91.4003 31.6998,-91.3794 31.7328,-91.3638 31.7484,-91.3186 31.7502,-91.2769 31.745,-91.2595 31.7623,-91.2821 31.7728,-91.3655 31.7606,-91.3447 31.844,-91.2943 31.8597,-91.2838 31.8162,-91.2612 31.8093,-91.2456 31.8319,-91.2682 31.8597,-91.2473 31.8701,-91.1813 31.917,-91.1935 31.9361,-91.1882 31.9605,-91.1639 31.9831,-91.1048 31.99,-91.077 32.0143,-91.0909 32.0352,-91.1552 32.0526,-91.157 32.0752,-91.1361 32.0804,-91.1048 32.0508,-91.0805 32.0474,-91.0805 32.0786,-91.037 32.0995,-91.0301 32.1151,-91.0301 32.1203,-91.0092 32.1343,-91.0058 32.1621,-91.0492 32.1516,-91.0527 32.1238,-91.0788 32.1343,-91.1118 32.1256,-91.1656 32.1343,-91.1743 32.1568,-91.1639 32.1951,-91.1239 32.2107,-91.1118 32.2072,-91.0822 32.2264,-91.0614 32.2194,-91.0336 32.2403,-90.9849 32.2125,-90.9693 32.2524,-90.9832 32.2733,-90.9797 32.2924,-90.9502 32.2837,-90.905 32.3167,-90.8754 32.3706,-90.8911 32.3723,-90.9137 32.3411,-91.0023 32.3602,-90.9919 32.4036,-90.9658 32.4227,-90.971 32.4401,-90.9953 32.4505,-91.0284 32.4332,-91.0944 32.4575,-91.1153 32.4836,-91.117 32.4992,-91.0927 32.5479,-91.037 32.4905,-91.0023 32.4818,-90.9901 32.5009,-91.0075 32.5148,-91.0701 32.5427,-91.0701 32.5635,-91.044 32.5757,-91.004 32.6122,-91.0214 32.6452,-91.037 32.6365,-91.0509 32.607,-91.1187 32.5844,-91.1396 32.5948,-91.1517 32.6174,-91.15 32.6435,-91.1135 32.6765,-91.0718 32.6973,-91.0544 32.7199,-91.0822 32.7338,-91.1639 32.7495,-91.157 32.779,-91.1639 32.7877,-91.1587 32.8225,-91.1396 32.8485,-91.1066 32.8572,-91.0857 32.8746,-91.0631 32.9059,-91.0649 32.9267,-91.0822 32.9476,-91.0857 32.9719,-91.1066 32.9893,-91.1361 32.9789,-91.1309 32.9267,-91.1465 32.9059,-91.1743 32.9007,-91.2074 32.9146,-91.2143 32.9319,-91.2021 32.9615,-91.1726 32.9876,-91.1656 33.0049,-91.1656 33.0119,-91.1274 33.0362,-91.1205 33.0571,-91.15 33.0814,-91.1987 33.1075,-91.2021 33.1231,-91.183 33.1422,-91.1274 33.1301,-91.0892 33.1422,-91.084 33.177,-91.0909 33.2204,-91.0544 33.2465,-91.044 33.276,-91.0788 33.283,-91.0979 33.2395,-91.1048 33.243,-91.1413 33.2986,-91.1413 33.349,-91.0718 33.4116,-91.0579 33.4411,-91.0857 33.4516,-91.0979 33.4099,-91.1378 33.3821,-91.1656 33.3803,-91.2091 33.4029,-91.2021 33.4168,-91.1361 33.4272,-91.1187 33.455,-91.1292 33.4759,-91.1691 33.4985,-91.1778 33.4828,-91.1691 33.4533,-91.2056 33.4342,-91.2352 33.4394,-91.2317 33.4568,-91.2074 33.4689,-91.183 33.5002,-91.216 33.5298,-91.2317 33.5611,-91.1778 33.5819,-91.1517 33.5836,-91.1309 33.6045,-91.1378 33.6236,-91.1674 33.6445,-91.2247 33.6671,-91.2143 33.6966,-91.1604 33.707,-91.1309 33.674,-91.0909 33.6584,-91.0318 33.6758,-91.0301 33.6879,-91.0596 33.714,-91.1066 33.7053,-91.1465 33.7296,-91.1448 33.7679,-91.1309 33.7835,-91.11 33.7731,-91.0527 33.7783,-91.0214 33.7626,-90.9919 33.7765,-91.0006 33.7991,-91.0475 33.8165,-91.0735 33.8565,-91.011 33.9295,-91.0822 33.9556,-91.077 33.9834,-91.0457 33.9868,-91.0214 34.0007,-91.0006 33.966,-90.971 33.9625,-90.9606 33.9799,-90.9866 34.0181,-90.8911 34.0285,-90.8876 34.0563,-90.8719 34.0876,-90.8876 34.0981,-90.9223 34.0946,-90.9554 34.1189,-90.9554 34.1207,-90.9554 34.138,-90.905 34.1641,-90.8528 34.138,-90.832 34.1398,-90.8076 34.1641,-90.8129 34.1815,-90.8911 34.185,-90.931 34.2128,-90.9362 34.2371,-90.9084 34.244,-90.8859 34.2197,-90.8459 34.2093,-90.8285 34.2736,-90.8024 34.2823,-90.7659 34.2805,-90.7433 34.3031,-90.7451 34.3257,-90.7677 34.3483,-90.7572 34.3674,-90.6773 34.3709,-90.6929 34.3257,-90.6617 34.317,-90.6669 34.3553,-90.6582 34.3761,-90.6078 34.3935,-90.5678 34.4265,-90.5904 34.4821,-90.5696 34.5256,-90.5418 34.5499,-90.5852 34.6107,-90.5835 34.642,-90.5869 34.6733,-90.5609 34.6976,-90.5383 34.682,-90.5557 34.6455,-90.5383 34.6281,-90.5105 34.6351,-90.4653 34.675,-90.4722 34.6994,-90.5348 34.6976,-90.5678 34.7254,-90.5365 34.748,-90.547 34.7845,-90.5139 34.8019,-90.5018 34.7741,-90.5244 34.7515,-90.5209 34.7324,-90.4861 34.7237,-90.4531 34.7376,-90.4531 34.7515,-90.474 34.7915,-90.4566 34.8228,-90.4827 34.8593,-90.4809 34.8801,-90.441 34.8853,-90.4288 34.8697,-90.4271 34.8401,-90.4079 34.8332,-90.3419 34.8593,-90.3106 34.8436,-90.3054 34.861,-90.3106 34.8749,-90.2498 34.9079,-90.2515 34.9531,-90.2967 34.9757,-90.3089 34.9965,-89.7249 34.9948,-89.645 34.9948,-89.353 34.9931,-89.1984 34.9948,-89.0176 34.9948,-88.823 34.9948,-88.7865 34.9948,-88.3798 34.9948,-88.3642 34.9948,-88.2008 34.9948,-88.1504 34.9183,-88.0983 34.8923,-88.14 34.5812,-88.1556 34.463,-88.173 34.3205,-88.2043 34.0859,-88.2078 34.0581,-88.2495 33.7453,-88.2738 33.5332,-88.3051 33.2882,-88.3399 32.991,-88.3485 32.9285,-88.3885 32.5774,-88.4215 32.308,-88.432 32.2281,-88.4737 31.8944,-88.465 31.698,-88.4493 31.4356,-88.432 31.1141,-88.425 30.9977,-88.4128 30.7353,-88.3955 30.3703,-88.4146 30.3529,-88.5032 30.3338,-88.5988 30.3512,-88.7013 30.3547,-88.823 30.3825,-88.8473 30.3877,-89.0124 30.3755,-89.2627 30.3251,-89.3148 30.3581,-89.3287 30.3581,-89.3461 30.3442,-89.3461 30.3199,-89.3652 30.2904,-89.4486 30.2104,-89.5234 30.1809))&quot;</value>
+                <value>32.75</value>
+                <value>-89.75</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Longitude (generated)]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Latitude (generated)]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[med:PredictedObamaRate:qk]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[none:State:nk]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Geometry (generated)]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Latitude (generated)]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Longitude (generated)]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>-40.010228717020098</value>
+                <value>&quot;KY&quot;</value>
+                <value>&quot;MULTIPOLYGON(((-82.869 36.9743,-82.8551 36.9534,-82.8586 36.9291,-82.8777 36.8926,-82.909 36.8752,-82.9976 36.8561,-83.0723 36.8543,-83.0758 36.8404,-83.1019 36.8283,-83.1054 36.8039,-83.1332 36.7848,-83.1262 36.7622,-83.1349 36.7431,-83.194 36.7396,-83.3469 36.6997,-83.4199 36.6684,-83.4616 36.6649,-83.5311 36.6666,-83.5781 36.6423,-83.6458 36.6249,-83.6754 36.6006,-83.6945 36.5832,-83.9308 36.5884,-83.9882 36.5902,-84.228 36.5919,-84.261 36.5919,-84.7789 36.6041,-84.7859 36.6041,-84.9753 36.6162,-85.276 36.6267,-85.2968 36.6249,-85.4359 36.618,-85.7886 36.6215,-85.9763 36.6284,-86.2057 36.6406,-86.4108 36.651,-86.5064 36.6527,-86.5637 36.6336,-86.5985 36.6527,-86.7636 36.6493,-87.0608 36.6423,-87.1146 36.6423,-87.3354 36.6423,-87.6412 36.6388,-87.6934 36.6371,-87.8428 36.6336,-87.8567 36.6649,-88.0705 36.6788,-88.0322 36.5398,-88.0392 36.512,-88.0531 36.4963,-88.4893 36.5015,-88.5171 36.5015,-88.816 36.5033,-88.8265 36.5033,-88.8352 36.5033,-89.3461 36.5033,-89.4173 36.4998,-89.3739 36.6162,-89.327 36.6319,-89.2714 36.5711,-89.2383 36.5676,-89.2123 36.5832,-89.1966 36.6284,-89.174 36.651,-89.1619 36.6666,-89.1706 36.6892,-89.1984 36.7153,-89.2001 36.7362,-89.1706 36.7588,-89.1254 36.7535,-89.1236 36.7848,-89.1688 36.797,-89.1793 36.8109,-89.1706 36.8422,-89.1445 36.8474,-89.1306 36.8648,-89.101 36.9447,-89.1045 36.9708,-89.1323 36.9812,-89.1688 37.0055,-89.181 37.0455,-89.1723 37.0681,-89.1115 37.1202,-89.0871 37.1654,-89.0298 37.2106,-88.9794 37.2297,-88.9342 37.2245,-88.9273 37.2262,-88.8039 37.188,-88.7291 37.1428,-88.6909 37.1411,-88.6197 37.1168,-88.5849 37.0959,-88.5658 37.075,-88.5206 37.0664,-88.491 37.0681,-88.4615 37.0733,-88.4493 37.0872,-88.425 37.1533,-88.4493 37.2054,-88.5119 37.2627,-88.5154 37.2905,-88.4876 37.3409,-88.4737 37.3931,-88.4493 37.4122,-88.4146 37.4244,-88.3711 37.4018,-88.359 37.4052,-88.3277 37.4313,-88.2825 37.4522,-88.0844 37.4713,-88.0618 37.506,-88.0722 37.5286,-88.133 37.5738,-88.1574 37.6364,-88.1591 37.6625,-88.1226 37.7094,-88.0601 37.7424,-88.0288 37.7997,-87.9992 37.798,-87.9506 37.7719,-87.9332 37.7963,-87.9071 37.8067,-87.9106 37.8432,-87.9401 37.8762,-87.9262 37.9023,-87.895 37.9283,-87.8706 37.9197,-87.8307 37.8762,-87.7924 37.8762,-87.7611 37.8919,-87.7003 37.8971,-87.6812 37.904,-87.6656 37.8797,-87.6812 37.8554,-87.676 37.8328,-87.6325 37.8276,-87.6134 37.8328,-87.5891 37.8623,-87.5926 37.8884,-87.6204 37.9075,-87.6291 37.9249,-87.6065 37.9492,-87.5995 37.9735,-87.5804 37.9718,-87.5613 37.9336,-87.5109 37.9058,-87.4518 37.9405,-87.4031 37.9423,-87.3023 37.8971,-87.2693 37.878,-87.2189 37.8484,-87.1633 37.8397,-87.1407 37.8154,-87.1303 37.7876,-87.106 37.7824,-87.0677 37.805,-87.0434 37.8675,-87.0417 37.8988,-86.9791 37.9301,-86.9183 37.937,-86.8592 37.9857,-86.814 37.9979,-86.7949 37.9892,-86.7775 37.9509,-86.7323 37.8953,-86.7167 37.8936,-86.6802 37.9144,-86.6472 37.9092,-86.6454 37.8953,-86.6628 37.8571,-86.6558 37.8432,-86.635 37.8432,-86.5985 37.871,-86.6002 37.9058,-86.5881 37.9214,-86.5342 37.9179,-86.5081 37.9301,-86.5255 37.9666,-86.5255 38.0291,-86.5168 38.0413,-86.4907 38.0465,-86.456 38.05,-86.4334 38.0674,-86.4334 38.0848,-86.4647 38.1039,-86.4612 38.1213,-86.4317 38.1265,-86.4021 38.1056,-86.3778 38.1299,-86.3326 38.1299,-86.3239 38.1525,-86.3708 38.1647,-86.3778 38.1821,-86.3587 38.1995,-86.3291 38.1821,-86.2909 38.1612,-86.27 38.1299,-86.2787 38.0969,-86.2718 38.0639,-86.2196 38.0274,-86.1745 38.01,-86.131 38.0152,-86.0771 37.9979,-86.0632 37.9735,-86.0354 37.9648,-86.0302 37.9909,-85.9989 37.9996,-85.9468 38.0048,-85.9207 38.0326,-85.9051 38.0934,-85.9086 38.1438,-85.8999 38.1803,-85.8443 38.2307,-85.8269 38.2777,-85.7921 38.2881,-85.773 38.2864,-85.7435 38.2672,-85.6809 38.2968,-85.6531 38.3281,-85.6374 38.3802,-85.6201 38.4236,-85.601 38.4428,-85.5019 38.4671,-85.4706 38.5071,-85.4324 38.5244,-85.4167 38.5488,-85.4289 38.587,-85.4393 38.6079,-85.4393 38.6583,-85.4567 38.6861,-85.4515 38.7104,-85.4185 38.7365,-85.3698 38.7313,-85.3333 38.7365,-85.2899 38.7417,-85.2586 38.7382,-85.2012 38.6913,-85.1474 38.6948,-85.1022 38.726,-85.024 38.7625,-84.9927 38.7782,-84.9423 38.7764,-84.8902 38.7938,-84.8137 38.7851,-84.8293 38.8303,-84.7946 38.8581,-84.7928 38.8877,-84.871 38.9016,-84.878 38.9207,-84.8345 38.9589,-84.8293 38.9711,-84.878 39.0319,-84.8971 39.058,-84.8206 39.1049,-84.7876 39.1153,-84.7616 39.1414,-84.7424 39.1466,-84.7181 39.1362,-84.6868 39.1014,-84.6573 39.0945,-84.6243 39.0736,-84.5739 39.0823,-84.5495 39.0997,-84.5061 39.0945,-84.4765 39.1205,-84.4539 39.1205,-84.4348 39.1014,-84.4261 39.0528,-84.3566 39.0406,-84.3201 39.0215,-84.301 38.9989,-84.2906 38.9589,-84.2367 38.8963,-84.2315 38.8755,-84.2298 38.8268,-84.2072 38.8025,-84.0525 38.7712,-83.9621 38.7869,-83.903 38.7677,-83.8596 38.7573,-83.837 38.7173,-83.7866 38.6982,-83.7675 38.6548,-83.7049 38.6391,-83.6684 38.627,-83.6441 38.6357,-83.6267 38.6791,-83.5207 38.7034,-83.4686 38.6756,-83.3573 38.6548,-83.3278 38.6374,-83.3174 38.6096,-83.2878 38.5992,-83.267 38.6183,-83.2426 38.6287,-83.2009 38.6166,-83.1471 38.6235,-83.1314 38.6357,-83.114 38.6704,-83.0532 38.6948,-83.0306 38.726,-82.9715 38.7278,-82.9229 38.7504,-82.8794 38.7521,-82.8707 38.7278,-82.8777 38.6878,-82.8586 38.6583,-82.8516 38.6061,-82.8151 38.5714,-82.7873 38.5592,-82.7265 38.5592,-82.69 38.5383,-82.6657 38.5053,-82.6101 38.4723,-82.5927 38.4219,-82.5979 38.3472,-82.5718 38.3176,-82.5823 38.2968,-82.5753 38.2655,-82.584 38.2464,-82.6048 38.2481,-82.6118 38.2325,-82.5979 38.2168,-82.6135 38.1717,-82.6431 38.1682,-82.6379 38.1386,-82.6187 38.1213,-82.5875 38.1091,-82.584 38.09,-82.551 38.0709,-82.5388 38.0361,-82.5162 38.0066,-82.4884 37.9996,-82.4745 37.9544,-82.4971 37.9457,-82.4815 37.9266,-82.4206 37.8849,-82.4154 37.8554,-82.4206 37.8467,-82.3772 37.8032,-82.3407 37.7858,-82.3337 37.7407,-82.3181 37.7337,-82.2938 37.6694,-82.2833 37.6764,-82.259 37.6572,-82.2364 37.659,-82.2138 37.626,-82.1652 37.6207,-82.1565 37.5929,-82.1339 37.5929,-82.1269 37.5738,-82.1443 37.5686,-82.1321 37.553,-82.1043 37.5599,-82.0748 37.5564,-82.047 37.5286,-82.0418 37.5478,-82.0105 37.5321,-81.9723 37.546,-81.9688 37.5373,-82.3146 37.2958,-82.3511 37.2662,-82.4397 37.2471,-82.5544 37.2037,-82.5649 37.1967,-82.6344 37.155,-82.7213 37.1202,-82.7248 37.042,-82.7421 37.042,-82.7821 37.0073,-82.8273 37.0055,-82.8377 36.9864,-82.869 36.9743)),((-89.539 36.4981,-89.5598 36.5241,-89.5703 36.5554,-89.5546 36.5763,-89.5303 36.5815,-89.4851 36.5728,-89.466 36.5294,-89.4851 36.4981,-89.539 36.4981)))&quot;</value>
+                <value>37.789999999999999</value>
+                <value>-84.870000000000005</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Longitude (generated)]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Latitude (generated)]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[med:PredictedObamaRate:qk]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[none:State:nk]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Geometry (generated)]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Latitude (generated)]</field>
+                  <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[Longitude (generated)]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>-11.269427846789899</value>
+                <value>&quot;IN&quot;</value>
+                <value>&quot;POLYGON((-86.814 37.9979,-86.8592 37.9857,-86.9183 37.937,-86.9791 37.9301,-87.0417 37.8988,-87.0434 37.8675,-87.0677 37.805,-87.106 37.7824,-87.1303 37.7876,-87.1407 37.8154,-87.1633 37.8397,-87.2189 37.8484,-87.2693 37.878,-87.3023 37.8971,-87.4031 37.9423,-87.4518 37.9405,-87.5109 37.9058,-87.5613 37.9336,-87.5804 37.9718,-87.5995 37.9735,-87.6065 37.9492,-87.6291 37.9249,-87.6204 37.9075,-87.5926 37.8884,-87.5891 37.8623,-87.6134 37.8328,-87.6325 37.8276,-87.676 37.8328,-87.6812 37.8554,-87.6656 37.8797,-87.6812 37.904,-87.7003 37.8971,-87.7611 37.8919,-87.7924 37.8762,-87.8307 37.8762,-87.8706 37.9197,-87.895 37.9283,-87.9262 37.9023,-87.9401 37.8762,-87.9106 37.8432,-87.9071 37.8067,-87.9332 37.7963,-87.9506 37.7719,-87.9992 37.798,-88.0288 37.7997,-88.0375 37.8102,-88.0687 37.8015,-88.0896 37.8189,-88.0809 37.831,-88.0479 37.8223,-88.0913 37.8901,-88.0913 37.9058,-88.0566 37.8919,-88.0149 37.8919,-88.0218 37.9144,-88.0601 37.9179,-88.0583 37.9336,-88.034 37.9266,-88.0357 37.9579,-88.0131 37.9683,-88.0253 38.0083,-88.0079 38.0309,-88.0357 38.0326,-88.0427 38.0448,-87.9732 38.0639,-87.961 38.1004,-88.0079 38.0848,-88.0149 38.1004,-87.9766 38.1091,-87.9679 38.1317,-87.9454 38.1265,-87.9106 38.163,-87.9384 38.1734,-87.9819 38.2047,-87.9836 38.2307,-87.9871 38.2568,-87.961 38.2377,-87.9436 38.2568,-87.9523 38.2742,-87.9349 38.295,-87.9106 38.2968,-87.888 38.2846,-87.8446 38.2794,-87.8324 38.295,-87.8324 38.3228,-87.8046 38.3628,-87.7785 38.3715,-87.7438 38.415,-87.7299 38.4462,-87.7542 38.4549,-87.742 38.4775,-87.6916 38.4897,-87.6725 38.5071,-87.6464 38.514,-87.6708 38.5453,-87.6517 38.5679,-87.6152 38.6252,-87.6204 38.6391,-87.5995 38.6617,-87.5317 38.6826,-87.4952 38.7399,-87.5039 38.7486,-87.4952 38.7834,-87.5265 38.8181,-87.5317 38.8529,-87.5474 38.8755,-87.523 38.9016,-87.5283 38.9189,-87.5126 38.9537,-87.5317 38.9728,-87.5787 38.9885,-87.57 39.0197,-87.5734 39.0562,-87.596 39.0788,-87.6186 39.0858,-87.6169 39.1032,-87.6569 39.1344,-87.6291 39.157,-87.6204 39.1848,-87.5908 39.1987,-87.5752 39.2196,-87.5787 39.2439,-87.6047 39.2596,-87.6065 39.3117,-87.5787 39.3395,-87.5317 39.3482,-87.5317 39.4768,-87.5317 39.6071,-87.5335 39.8835,-87.5317 40.1476,-87.5265 40.4761,-87.5265 40.4917,-87.5265 40.7368,-87.5265 41.0096,-87.5265 41.166,-87.5265 41.2981,-87.5265 41.4702,-87.5248 41.7082,-87.4223 41.6544,-87.3892 41.6439,-87.245 41.6353,-87.2207 41.6405,-87.1581 41.6492,-87.0417 41.6822,-86.9339 41.7204,-86.8244 41.7604,-86.5238 41.7604,-86.2266 41.7604,-86.0632 41.7604,-85.7921 41.7586,-85.66 41.7586,-85.2916 41.7604,-85.196 41.7604,-84.8259 41.7604,-84.8067 41.7552,-84.8067 41.6961,-84.805 41.531,-84.8033 41.4267,-84.8033 41.272,-84.8033 41.2529,-84.8033 40.9888,-84.8033 40.9227,-84.8015 40.7281,-84.8033 40.5717,-84.8033 40.3527,-84.8033 40.3092,-84.8102 40.0051,-84.812 39.9165,-84.8137 39.7271,-84.8154 39.5672,-84.8154 39.522,-84.8189 39.3048,-84.8206 39.1049,-84.8971 39.058,-84.878 39.0319,-84.8293 38.9711,-84.8345 38.9589,-84.878 38.9207,-84.871 38.9016,-84.7928 38.8877,-84.7946 38.8581,-84.8293 38.8303,-84.8137 38.7851,-84.8902 38.7938,-84.9423 38.7764,-84.9927 38.7782,-85.024 38.7625,-85.1022 38.726,-85.1474 38.6948,-85.2012 38.6913,-85.2586 38.7382,-85.2899 38.7417,-85.3333 38.7365,-85.3698 38.7313,-85.4185 38.7365,-85.4515 38.7104,-85.4567 38.6861,-85.4393 38.6583,-85.4393 38.6079,-85.4289 38.587,-85.4167 38.5488,-85.4324 38.5244,-85.4706 38.5071,-85.5019 38.4671,-85.601 38.4428,-85.6201 38.4236,-85.6374 38.3802,-85.6531 38.3281,-85.6809 38.2968,-85.7435 38.2672,-85.773 38.2864,-85.7921 38.2881,-85.8269 38.2777,-85.8443 38.2307,-85.8999 38.1803,-85.9086 38.1438,-85.9051 38.0934,-85.9207 38.0326,-85.9468 38.0048,-85.9989 37.9996,-86.0302 37.9909,-86.0354 37.9648,-86.0632 37.9735,-86.0771 37.9979,-86.131 38.0152,-86.1745 38.01,-86.2196 38.0274,-86.2718 38.0639,-86.2787 38.0969,-86.27 38.1299,-86.2909 38.1612,-86.3291 38.1821,-86.3587 38.1995,-86.3778 38.1821,-86.3708 38.1647,-86.3239 38.1525,-86.3326 38.1299,-86.3778 38.1299,-86.4021 38.1056,-86.4317 38.1265,-86.4612 38.1213,-86.4647 38.1039,-86.4334 38.0848,-86.4334 38.0674,-86.456 38.05,-86.4907 38.0465,-86.5168 38.0413,-86.5255 38.0291,-86.5255 37.9666,-86.5081 37.9301,-86.5342 37.9179,-86.5881 37.9214,-86.6002 37.9058,-86.5985 37.871,-86.635 37.8432,-86.6558 37.8432,-86.6628 37.8571,-86.6454 37.8953,-86.6472 37.9092,-86.6802 37.9144,-86.7167 37.8936,-86.7323 37.8953,-86.7775 37.9509,-86.7949 37.9892,-86.814 37.9979))&quot;</value>
+                <value>40.0</value>
+                <value>-86.25</value>
+              </tuple>
+            </tuple-reference>
+          </tuple-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[med:PredictedObamaRate:qk]</field>
+            <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[none:ObamaPercentMargin:nk]</field>
+            <field>[federated.04mofdt1lq688y1bw1uf61fyjsqi].[none:State:nk]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{212BAC34-C022-4C9A-9FA6-455BCA8AC4C0}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Predicted Obama Margin Rate' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
